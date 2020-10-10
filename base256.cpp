@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-static string base256alphabet[256] =
+string base256alphabet[256] =
 {
 "0","1","2","3","4","5","6","7","8","9",								 // digits
 "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z", // uppercase
@@ -30,7 +30,7 @@ u8"Γ",u8"Δ",u8"Θ",u8"Λ",u8"Ξ",u8"Π",u8"Σ",u8"Φ",u8"Ψ",u8"Ω",u8"α",u8"
 "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y",
 };
 
-string base256encode(unsigned char *dataPtr, size_t dataSize)
+string encodeInB256U(uint8_t *dataPtr, size_t dataSize)
 {
 	string result = {};
 	for (size_t i = 0; i < dataSize; i++)
@@ -40,13 +40,11 @@ string base256encode(unsigned char *dataPtr, size_t dataSize)
 
 int main(int argc, char *argv[])
 {
-	uint8_t binaryData[128 / 8] = {};
-
 	srand(time(nullptr));
+	uint8_t binaryData[128 / 8] = {};
 	for (int i = 0; i < sizeof(binaryData); i++)
 		binaryData[i] = rand();
 
-	string result = base256encode(binaryData, sizeof(binaryData));
-	cout << "random 128 bit encoded in base256: " << result << endl;
+	cout << "random 128 bit encoded in B256U: " << encodeInB256U(binaryData, sizeof(binaryData)) << endl;
 	return 0;
 }
