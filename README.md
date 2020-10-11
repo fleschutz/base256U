@@ -12,15 +12,15 @@ Advantages of B256U
 * it supports double-click for copy&paste (no terminal characters in B256U) 
 * it simply works: B256U uses Unicode 1.0 only (highest code point used is 333)
 
-128 bit Samples in B256U
-------------------------
+Samples of 128 bit in B256U encoding
+------------------------------------
 * ġ7¢K#ĈÝ¢ØĵOĦQ®ðğ
 * ¬üYęÎpMľ6Mĺ±Ùìň9
 * $ÀňåıAęü'p»äńYĘĝ
 * ¶»Ń'ÊKêuĉ_àj÷òa4
 
-256 bit Samples in B256U
-------------------------
+Samples of 256 bit in B256U encoding
+------------------------------------
 * ,ÈEÂ³'ċ`ÝÂđħÁ¶~/üċ]JyãÊu£ùēOÜÑbĥ
 * hwčĽ¶ĚB%đĘŌàú«n³tyÉdÝİ§ÿ9Ô°ķ«ĤBÞ
 * Cł[&¢ņÐôĽąë4pçI(ĜÂÁAČćģŋêzüÄáĢAí
