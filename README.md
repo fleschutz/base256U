@@ -9,7 +9,8 @@ Advantages of B256U
 * it's safe: people are forced to copy&paste it 
 * it's simple: one byte is represented by one Unicode character
 * it's fast and easy to implement: see the source code
-* it works: B256U uses Unicode 1.0 only (highest code point used is 333)
+* it supports double-click for copy&paste (no terminal characters in B256U) 
+* it simply works: B256U uses Unicode 1.0 only (highest code point used is 333)
 
 128 bit Samples in B256U
 ------------------------
@@ -17,3 +18,10 @@ Advantages of B256U
 * ¬üYęÎpMľ6Mĺ±Ùìň9
 * $ÀňåıAęü'p»äńYĘĝ
 * ¶»Ń'ÊKêuĉ_àj÷òa4
+
+256 bit Samples in B256U
+------------------------
+* ,ÈEÂ³'ċ`ÝÂđħÁ¶~/üċ]JyãÊu£ùēOÜÑbĥ
+* æÄlT*Ę¶MÔ~ÚķÒĆ7ÑÜµíZćâ{¶=9z[Ļ!ŉÓ
+* >ÒĕĽp-Ñ|j¶äçŁkċånĬłÜ×ñÃĎjĿ@/ĈĤí9
+* hwčĽ¶ĚB%đĘŌàú«n³tyÉdÝİ§ÿ9Ô°ķ«ĤBÞ
