@@ -1,7 +1,7 @@
 Base 256 Encoding using Unicode (B256U)
 =======================================
 
-This is a simple C++ sample to represent binary data in B256U. Typical use cases for B256U are passwords, file checksums, identifiers and hashes.
+This is a simple C++ sample to represent binary data in B256U encoding. Typical use cases for B256U encodings are passwords, file checksums, identifiers and hashes.
 
 Advantages of B256U
 -------------------
@@ -14,13 +14,14 @@ Advantages of B256U
 
 Samples of 128 bit in B256U encoding
 ------------------------------------
-* ġ7¢K#ĈÝ¢ØĵOĦQ®ðğ
-* ¬üYęÎpMľ6Mĺ±Ùìň9
-* $ÀňåıAęü'p»äńYĘĝ
-* ¶»Ń'ÊKêuĉ_àj÷òa4
+* à°J¥ÜņĉĺŠrgġ6¯ēñ
+* 4ðaŜTīċQÐĶĎagÅw¡
+* sTÊłÓÀÇ6Ĝ¦ĪĜt£ăd
+* ©UªåĕÏëńōĝ®0ÛJ5Ü
 
 Samples of 256 bit in B256U encoding
 ------------------------------------
-* ,ÈEÂ³'ċ`ÝÂđħÁ¶~/üċ]JyãÊu£ùēOÜÑbĥ
-* hwčĽ¶ĚB%đĘŌàú«n³tyÉdÝİ§ÿ9Ô°ķ«ĤBÞ
-* Cł[&¢ņÐôĽąë4pçI(ĜÂÁAČćģŋêzüÄáĢAí
+* XéĚK5Ĥù7ăÈËŞĆfŚcŚ«ĭüvĀª´¶ŀŔİYX®¥
+* 6öĮ¢ùCŉŖŝĂęWİąŢözôìOµñäĤ8ÕØĘFĩÂM
+* 2ũĈĻĆÝăġËĶĕÉöĽĆŝ1Ń6őuuĄËĜĺŪĖÉďĺË
+* ñeħvĀČq«ßÉćĴöĒĤxéĜŒĤChFĥÚbĀŉĉŤfa
