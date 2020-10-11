@@ -7,5 +7,5 @@ Advantages of B256U
 -------------------
 * It's short: 128 bit require 16 characters only, 256 bit require 32 characters only
 * It's safe: people are forced to copy&paste it 
-* It's simple: one byte = one character in Unicode
-* It works: B256U uses Unicode 2.0 only
+* It's simple: one byte is represented by one Unicode character 
+* It works: B256U uses Unicode 1.0 only (highest used code point is 333)
