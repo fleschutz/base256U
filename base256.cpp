@@ -23,7 +23,7 @@ unsigned int alphabetB256U[256] =
 384,
 };
 
-string encodeB256U(uint8_t *dataPtr, size_t dataSize)
+string encodeB256U(const uint8_t *dataPtr, size_t dataSize)
 {
 	string result = {};
 	for (size_t i = 0; i < dataSize; i++)
@@ -40,6 +40,22 @@ string encodeB256U(uint8_t *dataPtr, size_t dataSize)
 	return result;
 }
 
+void decodeB256U(string& string, uint8_t *dataPtr)
+{
+	for (int i = 0; i < string.size(); i++)
+	{
+		unsigned int unicode = string[i];
+		if (unicode >= 128)
+			unicode = ((unicode - 192) << 6) | (string[++i] - 128);
+		for (int j = 0; j < sizeof(alphabetB256U); j++)
+			if (unicode == alphabetB256U[j])
+			{
+				*dataPtr++ = j;
+				break;
+			}
+	}
+}
+
 void randomize(uint8_t *dataPtr, size_t dataSize)
 {
 	srand(time(nullptr));
@@ -52,7 +68,11 @@ int main(int argc, char *argv[])
 	uint8_t binaryData[128 / 8] = {};
 	randomize(binaryData, sizeof(binaryData));
 
-	cout << "random 128 bit encoded in B256U: " << encodeB256U(binaryData, sizeof(binaryData)) << endl;
+	string text = encodeB256U(binaryData, sizeof(binaryData));
+	cout << "random 128 bit encoded in B256U: " << text << endl;
+
+	uint8_t binaryData2[128 / 8] = {};
+	decodeB256U(text, binaryData2);
 
 	return 0;
 }
