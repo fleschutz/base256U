@@ -80,6 +80,6 @@ int main(int argc, char *argv[])
 	decodeB256U(text, decodedData);
 
 	if (memcmp(binaryData, decodedData, sizeof(binaryData)) == 0)
-		cout << "Identical." << endl;
+		cout << "Decoded successfully" << endl;
 	return 0;
 }
