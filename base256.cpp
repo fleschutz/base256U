@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <time.h>
 using namespace std;
 
 unsigned int alphabetB256U[256] =
