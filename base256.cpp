@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 	randomize(binaryData, sizeof(binaryData));
 
 	string text = encodeB256U(binaryData, sizeof(binaryData));
-	cout << "random 128 bit encoded in B256U: " << text << endl;
+	cout << "random 128 bits encoded in B256U: " << text << endl;
 
 	uint8_t decodedData[sizeof(binaryData)] = {};
 	decodeB256U(text, decodedData);
