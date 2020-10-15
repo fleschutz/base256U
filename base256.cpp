@@ -1,9 +1,11 @@
 #include <string>
+#include <cstring>
 #include <iostream>
 #include <time.h>
 using namespace std;
+typedef unsigned int Unicode;
 
-unsigned int alphabetB256U[256] =
+Unicode alphabetB256U[256] =
 {
 '0','1','2','3','4','5','6','7','8','9',								 // ASCII digits
 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', // ASCIII upper
@@ -29,38 +31,40 @@ string encodeB256U(const uint8_t *dataPtr, size_t dataSize)
 	string result = {};
 	for (size_t i = 0; i < dataSize; i++)
 	{	
-		auto unicode = alphabetB256U[dataPtr[i]];
-		if (unicode < 128)
-			result.push_back(unicode);
+		Unicode character = alphabetB256U[dataPtr[i]];
+		if (character < 128)
+			result.push_back(character);
 		else
 		{
-			result.push_back(192 + (unicode >> 6));
-			result.push_back(128 + (unicode & 63));
+			result.push_back(192 + (character >> 6));
+			result.push_back(128 + (character & 63));
 		}
 	}
 	return result;
 }
 
-void decodeB256U(string& string, uint8_t *dataPtr)
+void decodeB256U(const string& string, uint8_t *dataPtr)
 {
-	for (int i = 0; i < string.size(); i++)
+	for (size_t i = 0; i < string.size(); i++)
 	{
-		unsigned int unicode = string[i];
+		Unicode unicode = (unsigned char)string[i];
 		if (unicode >= 128)
-			unicode = ((unicode - 192) << 6) | (string[++i] - 128);
-		for (int j = 0; j < sizeof(alphabetB256U); j++)
+			unicode = (unicode - 192) << 6 | ((unsigned char)string[++i] - 128) & 63;
+		for (size_t j = 0; j < sizeof(alphabetB256U); j++)
+		{
 			if (unicode == alphabetB256U[j])
 			{
 				*dataPtr++ = j;
 				break;
 			}
+		}
 	}
 }
 
 void randomize(uint8_t *dataPtr, size_t dataSize)
 {
 	srand(time(nullptr));
-	for (int i = 0; i < dataSize; i++)
+	for (size_t i = 0; i < dataSize; i++)
 		dataPtr[i] = rand();
 }
 
@@ -72,8 +76,10 @@ int main(int argc, char *argv[])
 	string text = encodeB256U(binaryData, sizeof(binaryData));
 	cout << "random 128 bit encoded in B256U: " << text << endl;
 
-	uint8_t binaryData2[128 / 8] = {};
-	decodeB256U(text, binaryData2);
+	uint8_t decodedData[sizeof(binaryData)] = {};
+	decodeB256U(text, decodedData);
 
+	if (memcmp(binaryData, decodedData, sizeof(binaryData)) == 0)
+		cout << "Identical." << endl;
 	return 0;
 }
