@@ -10,7 +10,7 @@ Advantages of B256U
 * it's **safe**: people are forced to copy&paste it 
 * it's **easy to implement**: see the source code
 * it **supports double-click** for copy&paste (no terminal characters in B256U) 
-* it **simply works**: B256U uses Unicode 1.0 only (highest code point used is 384)
+* it **backwards compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
 Samples of 128 bit in B256U encoding
 ------------------------------------
