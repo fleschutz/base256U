@@ -73,12 +73,12 @@ int main(int argc, char *argv[])
 	randomize(binaryData, sizeof(binaryData));
 
 	string text = encodeB256U(binaryData, sizeof(binaryData));
-	cout << "random 128 bits encoded in B256U: " << text << endl;
+	cout << "pseudorandom 128 bits encoded in B256U are <" << text;
 
 	uint8_t decodedData[sizeof(binaryData)] = {};
 	decodeB256U(text, decodedData);
 
 	if (memcmp(binaryData, decodedData, sizeof(binaryData)) == 0)
-		cout << "Decoded successfully" << endl;
+		cout << "> and decoding works!" << endl;
 	return 0;
 }
