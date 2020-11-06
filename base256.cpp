@@ -53,7 +53,7 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 		{
 			if (unicode == alphabetB256U[j])
 			{
-				*dataPtr++ = j;
+				*dataPtr++ = (uint8_t)j;
 				break;
 			}
 		}
