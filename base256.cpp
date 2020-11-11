@@ -31,13 +31,13 @@ string encodeB256U(const uint8_t *dataPtr, size_t dataSize)
 	for (size_t i = 0; i < dataSize; i++)
 	{	
 		Unicode character = alphabetB256U[dataPtr[i]];
-		if (character < 128)
-			result.push_back(character);
-		else
+		if (character >= 128)
 		{
 			result.push_back(192 + (character >> 6));
 			result.push_back(128 + (character & 63));
 		}
+		else
+			result.push_back(character);
 	}
 	return result;
 }
