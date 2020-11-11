@@ -6,9 +6,10 @@ This is a simple C++ sample to represent binary data in B256U encoding. Typical 
 Advantages of B256U
 -------------------
 * it's **short**: 128 bit require 16 characters only, 256 bit require 32 characters only
-* it's **simple** to grasp: one byte is represented by one Unicode character
+* it's **simple to grasp**: one byte is represented by one Unicode character
 * it's **safe**: people are forced to copy&paste it 
 * it's **easy to implement**: see the source code
+* it's **easy to recognize**: lots of umlauts
 * it **supports double-click** for copy&paste (no terminal characters in B256U) 
 * it **backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
