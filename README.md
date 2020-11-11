@@ -11,7 +11,7 @@ Advantages of B256U
 * it's **easy to implement**: see the [source code](base256.cpp)
 * it's **easy to recognize**: lots of umlauts
 * it **supports double-click** for copy&paste (no terminal characters in B256U) 
-* it **backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
+* it's **backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
 Samples of 128 bit in B256U encoding
 ------------------------------------
