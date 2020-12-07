@@ -49,7 +49,7 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 		Unicode unicode = (unsigned char)string[i];
 		if (unicode >= 128)
 			unicode = (unicode - 192) << 6 | ((unsigned char)string[++i] - 128) & 63;
-		for (size_t j = 0; j < sizeof(alphabetB256U); j++)
+		for (unsigned int j = 0; j < 256; j++)
 		{
 			if (unicode == alphabetB256U[j])
 			{
