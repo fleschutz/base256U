@@ -1,7 +1,7 @@
 Base 256 Encoding using Unicode (B256U)
 =======================================
 
-This is a simple C++ sample to represent binary data in B256U encoding. Typical use cases for B256U encodings are passwords, file checksums, identifiers and hashes.
+This repository contains a simple C++ sample program to represent binary data in B256U encoding. Typical use cases for B256U encodings are passwords, file checksums, identifiers and hashes.
 
 Advantages of B256U
 -------------------
