@@ -1,5 +1,5 @@
-# Platform-independent Makefile - requires cmake 2.6 or higher
-cmake_minimum_required(VERSION 2.6)
+# Platform-independent Makefile - requires cmake 2.9 or higher
+cmake_minimum_required(VERSION 2.9)
 
 # Source code is written in:
 set(CMAKE_CXX_STANDARD 17)
