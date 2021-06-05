@@ -8,7 +8,7 @@ Each byte is represented by one Unicode character (quite simple, right?). The 25
 * 10 digits (0...9)
 * 26 uppercase letters (A...Z)
 * 26 lowercase letters (a...z)
-* 194 umlauts
+* 194 umlaut characters
 
 Advantages of B256U Encoding
 ----------------------------
