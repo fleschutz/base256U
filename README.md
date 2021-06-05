@@ -13,10 +13,10 @@ Each byte is represented by one Unicode character (quite simple, right?). The 25
 Advantages of B256U Encoding
 ----------------------------
 * **it's short**: 128 bit data are represented by 16 characters only, 256 bit data require 32 characters only
-* **it's safe**: people are forced to copy&paste it 
+* **it's safe**: people are forced to copy & paste it 
 * **it's easy to implement**: see the [source code](base256.cpp)
 * **it's easy to recognize**: lots of umlauts (see the samples below)
-* **it supports double-click** for copy&paste (no terminal characters in B256U) 
+* **it supports double-click** for copy & paste (no terminal characters in B256U) 
 * **it's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
 Samples of 128 bit in B256U encoding
