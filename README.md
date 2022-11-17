@@ -32,3 +32,7 @@ Samples of 256 bit in B256U encoding
 * `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 * `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
 * `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+
+License & Copyright
+-------------------
+This open source project is licensed under the CC0 license. All trademarks are the property of their respective owners.
