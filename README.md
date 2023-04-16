@@ -1,10 +1,10 @@
 Base 256 Unicode (B256U) Encoding
 =================================
-This repository contains a simple C++ sample program to represent binary data in B256U encoding. Typical use cases for B256U encodings are passwords, file checksums, identifiers and hashes.
+This repository contains a simple C++ sample program to represent binary data in B256U encoding. Typical use cases are passwords, file checksums, identifiers and hashes.
 
 What is B256U Encoding?
 -----------------------
-Each byte is represented by one Unicode character - dead simple (and each Unicode character represents one byte). The 256 possible Unicode characters consist of:
+Each byte is represented by one Unicode character (and vice versa each Unicode character represents one byte) - dead simple. The 256 possible Unicode characters consist of:
 * 10 digits (0...9)
 * 26 uppercase letters (A...Z)
 * 26 lowercase letters (a...z)
