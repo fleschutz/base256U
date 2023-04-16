@@ -33,6 +33,10 @@ Samples of 256 bit in B256U encoding
 * `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
 * `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
+Feedback
+--------
+Send your email feedback to: markus.fleschutz [at] gmail.com
+
 License & Copyright
 -------------------
 This open source project is licensed under the CC0 license. All trademarks are the property of their respective owners.
