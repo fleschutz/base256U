@@ -4,9 +4,9 @@ This repository contains a simple C++ sample program to represent binary data in
 
 What is B256U Encoding?
 -----------------------
-Dead simple: each Unicode character represents exactly one byte (and vice versa each byte is represented by one Unicode character).
+Each Unicode character represents exactly one byte (dead simple, and vice versa each byte is represented by one Unicode character).
 
-The 256 possible Unicode characters consist of the **10 digits** (0...9), the **26 uppercase letters** (A...Z), the **26 lowercase letters** (a...z) and **194 umlaut characters**.
+The 256 possible Unicode characters to represent one byte are: the **10 digits** (0...9), the **26 uppercase letters** (A...Z), the **26 lowercase letters** (a...z) and **194 umlaut characters**.
 
 Advantages of B256U Encoding
 ----------------------------
