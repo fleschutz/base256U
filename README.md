@@ -19,6 +19,16 @@ Advantages of B256U Encoding
 * **it supports double-click** for copy & paste (no terminal characters in B256U) 
 * **it's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
+Installation
+------------
+```
+git clone https://github.com/fleschutz/base256unicode
+cd base256unicode
+cmake .
+make
+./base256
+```
+
 Samples of 128 bit in B256U encoding
 ------------------------------------
 * `ĺËĀ8Ę3ĩŔá0VzœĹŀî`
