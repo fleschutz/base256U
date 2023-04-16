@@ -29,15 +29,15 @@ Installation & Compilation
 > ./base256
 ```
 
-Samples of 128 bit in B256U encoding
-------------------------------------
+Samples of pseudo-random 128 bits encoded in B256U
+--------------------------------------------------
 * `ĺËĀ8Ę3ĩŔá0VzœĹŀî`
 * `ŽTĭŊõł3ÐÑęGųĢÛąĶ`
 * `5iŗ3īÛźUKĺŰÑÞbŒŜ`
 * `ņĨqvLŀŠsůØŸÙGCŰƀ`
 
-Samples of 256 bit in B256U encoding
-------------------------------------
+Samples of pseudo-random 256 bits encoded in B256U
+--------------------------------------------------
 * `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`
 * `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 * `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
