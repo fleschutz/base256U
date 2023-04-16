@@ -19,6 +19,8 @@ Advantages of B256U Encoding
 
 Installation & Compilation
 --------------------------
+Just a C++ compiler, git, and cmake is needed. Then execute in a terminal window:
+
 ```
 > git clone https://github.com/fleschutz/base256unicode
 > cd base256unicode
