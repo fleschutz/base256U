@@ -62,31 +62,31 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 
 void randomize(uint8_t *dataPtr, size_t dataSize)
 {
-	srand(time(nullptr) ^ rand() );
+	unsigned int seed = time(nullptr) + rand() + (unsigned long)dataPtr + (unsigned int)dataSize + dataPtr[0];
+	srand(seed);
 	for (size_t i = 0; i < dataSize; i++)
 		dataPtr[i] = rand();
 }
 
 int main(int argc, char *argv[])
 {
-	cout << "Samples of pseudo-random 128 bits encoded in B256U" << endl;
-	cout << "--------------------------------------------------" << endl;
-	for (int i = 0; i < 20; i++)
+	cout << endl;
+	cout << "100 Samples of pseudo-random 128 bits in B256U Encoding" << endl;
+	cout << "-------------------------------------------------------" << endl;
+	for (int i = 0; i < 100; i++)
 	{
-		uint8_t binaryData[128 / 8] = {};
+		uint8_t binaryData[128 / 8];
 		randomize(binaryData, sizeof(binaryData));
 
 		// encode:
 		string text = encodeB256U(binaryData, sizeof(binaryData));
-		cout << "[" << text;
+		cout << "[" << text << "]\t ";
 
-		// decode:
+		// decode and check:
 		uint8_t decodedData[sizeof(binaryData)] = {};
 		decodeB256U(text, decodedData);
-
-		// check:
-		if (memcmp(binaryData, decodedData, sizeof(binaryData)) == 0)
-			cout << "] (VERIFIED)\t\t ";
+		if (memcmp(binaryData, decodedData, sizeof(binaryData)) != 0)
+			return 1; // check failed
 	}
 	return 0;
 }
