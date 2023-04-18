@@ -45,7 +45,7 @@ Samples of pseudo-random 256 bits encoded in B256U
 
 How long does it take to break a random key or password?
 --------------------------------------------------------
-Trying every possible key or password (called 'brute force attack') at one billion attempts per second:
+Trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
 
 * a 40-bit key will be broken in about 9 minutes.
 * a 56-bit key will be broken in about a year.
