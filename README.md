@@ -43,6 +43,15 @@ Samples of pseudo-random 256 bits encoded in B256U
 * `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
 * `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
+How long does it take to break a random key or password?
+--------------------------------------------------------
+Trying every possible key or password (brute force attack) at one billion attempts per second:
+
+* 40-bit will be broken in about 9 minutes.
+* 56-bit will be broken in about a year.
+* 128-bit will be broken in about 5,783,128,169,837,158,197,871 years.
+* 256-bit will never be broken, for all practical purposes.
+
 Feedback
 --------
 Send your email feedback to: markus.fleschutz [at] gmail.com
