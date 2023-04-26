@@ -71,8 +71,8 @@ void randomize(uint8_t *dataPtr, size_t dataSize)
 int main(int argc, char *argv[])
 {
 	cout << endl;
-	cout << "100 Samples of pseudo-random 128 bits in B256U Encoding" << endl;
-	cout << "-------------------------------------------------------" << endl;
+	cout << "Pseudo-random 128-bit samples in B256U Encoding" << endl;
+	cout << "-----------------------------------------------" << endl;
 	for (int i = 0; i < 100; i++)
 	{
 		uint8_t binaryData[128 / 8];
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 
 		// encode:
 		string text = encodeB256U(binaryData, sizeof(binaryData));
-		cout << "[" << text << "]\t ";
+		cout << "<" << text << ">\t ";
 
 		// decode and check:
 		uint8_t decodedData[sizeof(binaryData)] = {};
