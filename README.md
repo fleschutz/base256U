@@ -10,7 +10,7 @@ The 256 possible Unicode characters to represent one byte are: the **10 digits**
 
 Advantages of B256U Encoding
 ----------------------------
-* **it's short**: 128 bit data are represented by 16 characters only, 256 bit data require 32 characters only
+* **it's short**: just 16 Unicode characters represent 128-bit of data, 32 characters represent 256-bit of data
 * **it's safe**: people are forced to copy & paste it 
 * **it's easy to implement**: see the [source code](base256.cpp)
 * **it's easy to recognize**: lots of umlauts (see the samples below)
