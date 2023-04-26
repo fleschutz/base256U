@@ -17,8 +17,8 @@ Advantages of B256U Encoding
 * **it supports double-click** for copy & paste (no terminal characters in B256U) 
 * **it's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
-Installation & Compilation
---------------------------
+Installation
+------------
 Just a C++ compiler, git, and cmake is needed. Then execute in a terminal window:
 
 ```
