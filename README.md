@@ -52,14 +52,12 @@ How long does it take to break a random key or password?
 --------------------------------------------------------
 Trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
 
-|----------|-------------------------------------------|
 | Key size | Time to break                             |
 |----------|-------------------------------------------|
 |  40-bit  | about 9 minutes                           |
 |  56-bit  | about a year                              |
 | 128-bit  | about 5,783,128,169,837,158,197,871 years |
 | 256-bit  | never, for all practical purposes         |
-|----------|-------------------------------------------|
 
 Feedback
 --------
