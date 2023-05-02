@@ -10,7 +10,7 @@ Each Unicode character represents exactly one byte (and vice versa: each byte is
 2. the **26 uppercase letters** (A...Z) and the **26 lowercase letters** (a...z)
 3. the **194 umlaut characters** (À, Á, Â, Ã, Ä, Å, ...)
 
-Typical use cases for B256U are safe passwords, file checksums, identifiers and hashes.
+Typical use cases for B256U encoding are safe passwords, file checksums, identifiers and hashes.
 
 Advantages of B256U Encoding
 ----------------------------
