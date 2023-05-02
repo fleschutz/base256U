@@ -1,6 +1,6 @@
 Base 256 Unicode (B256U) Encoding
 =================================
-This repo contains a simple C++ program to represent binary data in B256U encoding. Typical use cases for B256U are safe passwords, file checksums, identifiers and hashes.
+This repo contains a simple C++ program to represent binary data in B256U encoding. 
 
 What is B256U Encoding?
 -----------------------
@@ -9,6 +9,8 @@ Each Unicode character represents exactly one byte (and vice versa: each byte is
 1. the **10 digits** (0...9)
 2. the **26 uppercase letters** (A...Z) and the **26 lowercase letters** (a...z)
 3. the **194 umlaut characters** (À, Á, Â, Ã, Ä, Å, ...)
+
+Typical use cases for B256U are safe passwords, file checksums, identifiers and hashes.
 
 Advantages of B256U Encoding
 ----------------------------
