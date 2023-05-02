@@ -32,8 +32,8 @@ Execute in a terminal window: (requires git, cmake, and a C++ compiler)
 > ./base256
 ```
 
-Examples of 128-bit of data encoded in B256U
---------------------------------------------
+Examples of 128-bit of data in B256U Encoding
+---------------------------------------------
 * `ĺËĀ8Ę3ĩŔá0VzœĹŀî`
 * `ŽTĭŊõł3ÐÑęGųĢÛąĶ`
 * `5iŗ3īÛźUKĺŰÑÞbŒŜ`
@@ -41,8 +41,8 @@ Examples of 128-bit of data encoded in B256U
 * `ŋôBĉOÍŬįēĳmōįUĞÜ`
 * `Sőś6ŬŹŠęűöìÇthTK`
 
-Examples of 256-bit of data encoded in B256U
---------------------------------------------
+Examples of 256-bit of data in B256U Encoding
+---------------------------------------------
 * `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`
 * `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 * `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
