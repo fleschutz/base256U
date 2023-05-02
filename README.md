@@ -17,7 +17,7 @@ Advantages of B256U Encoding
 * **it's short**: just 16 Unicode characters represent 128-bit of data, 32 characters represent 256-bit of data
 * **it's safe**: people are forced to copy & paste it 
 * **it's easy to implement**: see the [source code](base256.cpp)
-* **it's easy to recognize**: lots of umlauts (see the samples below)
+* **it's easy to recognize**: lots of umlauts (see the examples below)
 * **it supports double-click** for copy & paste (no terminal characters in B256U) 
 * **it's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
@@ -32,8 +32,8 @@ Execute in a terminal window: (requires git, cmake, and a C++ compiler)
 > ./base256
 ```
 
-Samples of pseudo-random 128 bits encoded in B256U
---------------------------------------------------
+Examples of 128-bit of data encoded in B256U
+--------------------------------------------
 * `ĺËĀ8Ę3ĩŔá0VzœĹŀî`
 * `ŽTĭŊõł3ÐÑęGųĢÛąĶ`
 * `5iŗ3īÛźUKĺŰÑÞbŒŜ`
@@ -41,8 +41,8 @@ Samples of pseudo-random 128 bits encoded in B256U
 * `ŋôBĉOÍŬįēĳmōįUĞÜ`
 * `Sőś6ŬŹŠęűöìÇthTK`
 
-Samples of pseudo-random 256 bits encoded in B256U
---------------------------------------------------
+Examples of 256-bit of data encoded in B256U
+--------------------------------------------
 * `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`
 * `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 * `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
