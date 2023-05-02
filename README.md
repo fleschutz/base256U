@@ -21,7 +21,7 @@ Advantages of B256U Encoding
 
 Installation
 ------------
-Just a C++ compiler, git, and cmake is needed. Then execute in a terminal window:
+Requires git, cmake, and a C++ compiler - then execute in a terminal window:
 
 ```
 > git clone https://github.com/fleschutz/base256unicode; cd base256unicode
@@ -36,6 +36,8 @@ Samples of pseudo-random 128 bits encoded in B256U
 * `ŽTĭŊõł3ÐÑęGųĢÛąĶ`
 * `5iŗ3īÛźUKĺŰÑÞbŒŜ`
 * `ņĨqvLŀŠsůØŸÙGCŰƀ`
+* `ŋôBĉOÍŬįēĳmōįUĞÜ`
+* `Sőś6ŬŹŠęűöìÇthTK`
 
 Samples of pseudo-random 256 bits encoded in B256U
 --------------------------------------------------
