@@ -7,10 +7,10 @@ typedef uint32_t Unicode;
 
 Unicode alphabetB256U[256] =
 {
-'0','1','2','3','4','5','6','7','8','9',								 // ASCII digits
-'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', // ASCII upper
-'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', // ASCII lower
-192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,					 // Umlaut characters...
+'0','1','2','3','4','5','6','7','8','9',								 // digits
+'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', // uppercase letters
+'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', // lowercase letters
+192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,					 // umlaut letters...
 208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,
 224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,
 240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,
@@ -71,8 +71,8 @@ void randomize(uint8_t *dataPtr, size_t dataSize)
 int main(int argc, char *argv[])
 {
 	cout << endl;
-	cout << "Pseudo-random 128-bit samples in B256U Encoding" << endl;
-	cout << "-----------------------------------------------" << endl;
+	cout << "Examples of 128-bit of data in B256U Encoding" << endl;
+	cout << "---------------------------------------------" << endl;
 	for (int i = 0; i < 100; i++)
 	{
 		uint8_t binaryData[128 / 8];
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 
 		// encode:
 		string text = encodeB256U(binaryData, sizeof(binaryData));
-		cout << "<" << text << ">\t ";
+		cout << "[" << text << "]\t ";
 
 		// decode and check:
 		uint8_t decodedData[sizeof(binaryData)] = {};
