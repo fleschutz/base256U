@@ -7,9 +7,8 @@ What is B256U Encoding?
 Each Unicode character represents exactly one byte (and vice versa: each byte is represented by one Unicode character) - dead simple. The B256U alphabet of 256 possible Unicode characters consists of:
 
 1. the **10 digits** (0...9)
-2. the **26 uppercase letters** (A...Z)
-3. the **26 lowercase letters** (a...z)
-4. and **194 umlaut characters** (À, Á, Â, Ã, Ä, Å, ...)
+2. the **26 uppercase letters** (A...Z) and the **26 lowercase letters** (a...z)
+3. the **194 umlaut characters** (À, Á, Â, Ã, Ä, Å, ...)
 
 Advantages of B256U Encoding
 ----------------------------
