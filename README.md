@@ -28,6 +28,7 @@ First download und unzip the code (see green button), or execute: `git clone htt
 Then execute in a terminal window: (requires cmake and a C++ compiler)
 
 ```
+> cd base256unicode
 > cmake .
 > make
 > ./base256
