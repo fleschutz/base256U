@@ -61,8 +61,8 @@ Trying every possible key or password (called a 'brute force attack') at one bil
 | 128-bit  | about 5,783,128,169,837,158,197,871 years | ĤŗwĹĦñŧīĳēaqöĜĖŅ                 |
 | 256-bit  | never, for all practical purposes         | ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔń÷Ī7ėëŷò |
 
-Feedback
---------
+📧 Feedback
+------------
 Send your email feedback to: markus.fleschutz [at] gmail.com
 
 License & Copyright
