@@ -26,7 +26,7 @@ Installation
 Execute in a terminal window: (requires cmake and a C++ compiler)
 
 ```
-> git clone https://github.com/fleschutz/base256unicode  # Or download und unzip the code (click green button)
+> git clone https://github.com/fleschutz/base256unicode  # Or download und unzip the ZIP file (click green button)
 > cd base256unicode
 > cmake .
 > make
