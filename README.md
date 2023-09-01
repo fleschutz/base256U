@@ -23,11 +23,10 @@ Advantages of B256U Encoding
 
 Installation
 ------------
-First download und unzip the code (see green button), or execute: `git clone https://github.com/fleschutz/base256unicode`
-
-Then execute in a terminal window: (requires cmake and a C++ compiler)
+Execute in a terminal window: (requires cmake and a C++ compiler)
 
 ```
+> git clone https://github.com/fleschutz/base256unicode  # Or download und unzip the code (click green button)
 > cd base256unicode
 > cmake .
 > make
