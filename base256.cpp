@@ -2,6 +2,8 @@
 #include <cstring>
 #include <iostream>
 #include <time.h>
+#include <chrono>
+#include <thread>
 using namespace std;
 typedef uint32_t Unicode;
 
@@ -62,7 +64,7 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 
 void randomize(uint8_t *dataPtr, size_t dataSize)
 {
-	unsigned int seed = time(nullptr) + rand() + (unsigned long)dataPtr + (unsigned int)dataSize + dataPtr[0];
+	unsigned int seed = (unsigned int)time(nullptr) + rand() + (unsigned int)(unsigned long)dataPtr + (unsigned int)dataSize + dataPtr[0];
 	srand(seed);
 	for (size_t i = 0; i < dataSize; i++)
 		dataPtr[i] = rand();
@@ -88,5 +90,6 @@ int main(int argc, char *argv[])
 		if (memcmp(binaryData, decodedData, sizeof(binaryData)) != 0)
 			return 1; // check failed
 	}
+	std::this_thread::sleep_for(std::chrono::milliseconds(3000));
 	return 0;
 }
