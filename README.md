@@ -1,5 +1,5 @@
-Base 256 Unicode (B256U) Encoding
-=================================
+Base 256 Encoding using Unicode (B256U)
+=======================================
 This repo contains a simple C++ program to represent binary data in B256U encoding. 
 
 What is B256U Encoding?
@@ -12,8 +12,8 @@ Each Unicode character represents exactly one byte (and vice versa: each byte is
 
 Typical use cases for B256U encoding are safe passwords, file checksums, identifiers and hashes.
 
-Advantages of B256U Encoding
-----------------------------
+Advantages
+----------
 * **it's short**: just 16 Unicode characters represent 128-bit of data, 32 characters represent 256-bit of data
 * **it's safe**: people are forced to copy & paste it 
 * **it's easy to implement**: see the [source code](base256.cpp)
@@ -21,10 +21,13 @@ Advantages of B256U Encoding
 * **it supports double-click** for copy & paste (no terminal characters in B256U) 
 * **it's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
+Requirements
+------------
+Just requires cmake and a C++ compiler.
+
 Installation
 ------------
-Execute in a terminal window: (requires cmake and a C++ compiler)
-
+Execute in a terminal window: 
 ```
 > git clone https://github.com/fleschutz/base256unicode  # Or download und unzip the ZIP file (click green button)
 > cd base256unicode
@@ -33,21 +36,10 @@ Execute in a terminal window: (requires cmake and a C++ compiler)
 > ./base256
 ```
 
-Examples of 128-bit of data in B256U Encoding
----------------------------------------------
-* `ĺËĀ8Ę3ĩŔá0VzœĹŀî`
-* `ŽTĭŊõł3ÐÑęGųĢÛąĶ`
-* `5iŗ3īÛźUKĺŰÑÞbŒŜ`
-* `ņĨqvLŀŠsůØŸÙGCŰƀ`
-* `ŋôBĉOÍŬįēĳmōįUĞÜ`
-* `Sőś6ŬŹŠęűöìÇthTK`
-
-Examples of 256-bit of data in B256U Encoding
----------------------------------------------
-* `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`
-* `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
-* `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`
-* `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+Examples
+--------
+* For 128-bit of data: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`
+* For 256-bit of data: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
 How long does it take to break a random key or password?
 --------------------------------------------------------
