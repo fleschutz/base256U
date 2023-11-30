@@ -1,6 +1,18 @@
 Base 256 Encoding using Unicode
 ===============================
-This repo contains a simple C++ program to represent binary data in base 256 encoding using Unicode characters (B256U). Each Unicode character represents exactly one byte and vice versa: each byte is represented by exactly one Unicode character, e.g. byte 0 is represented by Unicode digit '0'.
+This repo contains a simple C++ program to represent binary data in base 256 encoding using Unicode characters (B256U).  Typical use cases for B256U encoding are safe passwords, file checksums, identifiers and hashes.
+
+What is B256U?
+---------------
+Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping from bytes to Unicode characters is quite simple:
+
+| Byte     | Unicode character                          | 
+|----------|--------------------------------------------|
+|  0...9   | '0'...'9' (10 digits)                      |  
+| 10...35  | 'A'...'Z' (26 uppercase letters)           |
+| 36...61  | 'a'...'z' (26 lowercase letters)           | 
+| 62...255 | 'À', 'Á', 'Â', ... (194 umlaut characters) |
+
 
 Advantages
 ----------
@@ -10,19 +22,6 @@ Advantages
 * **it's easy to recognize**: lots of umlauts (see the examples below)
 * **it supports double-click** for copy & paste (no terminal characters in B256U) 
 * **it's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
-
-How does it work?
------------------
-The B256U alphabet of 256 possible Unicode characters consists of:
-
-| Byte     | Unicode character                          | 
-|----------|--------------------------------------------|
-|  0...9   | '0'...'9' (10 digits)                      |  
-| 10...35  | 'A'...'Z' (26 uppercase letters)           |
-| 36...61  | 'a'...'z' (26 lowercase letters)           | 
-| 62...255 | 'À', 'Á', 'Â', ... (194 umlaut characters) |
-
-Typical use cases for B256U encoding are safe passwords, file checksums, identifiers and hashes.
 
 Build Requirements
 ------------------
