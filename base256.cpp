@@ -62,7 +62,7 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 	}
 }
 
-void randomize(uint8_t *dataPtr, size_t dataSize)
+void randomizeData(uint8_t *dataPtr, size_t dataSize)
 {
 	unsigned int seed = (unsigned int)time(nullptr) + rand() + (unsigned int)(unsigned long)dataPtr + (unsigned int)dataSize + dataPtr[0];
 	srand(seed);
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 	for (int i = 0; i < 100; i++)
 	{
 		uint8_t binaryData[128 / 8];
-		randomize(binaryData, sizeof(binaryData));
+		randomizeData(binaryData, sizeof(binaryData));
 
 		// encode:
 		string text = encodeB256U(binaryData, sizeof(binaryData));
