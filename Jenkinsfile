@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     currentBuild.displayName = "base256"
-                    currentBuild.description = "Pipeline to build the base256 executable."
+                    currentBuild.description = "Pipeline to build base256"
                 }
                 sh 'cmake .'
                 sh 'make'
