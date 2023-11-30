@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                buildDescription 'my build'
                 script {
                     currentBuild.displayName = "base256"
                     currentBuild.description = "Pipeline to build the base256 executable."
