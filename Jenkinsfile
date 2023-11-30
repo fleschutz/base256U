@@ -3,10 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script {
-                    currentBuild.displayName = "base256"
-                    currentBuild.description = "Pipeline to build base256"
-                }
                 sh 'cmake .'
                 sh 'make'
             }
@@ -19,6 +15,10 @@ pipeline {
         stage('Zip') {
             steps {
                 sh 'zip base256.zip README.md LICENSE base256'
+                script {
+                    currentBuild.displayName = "base256"
+                    currentBuild.description = "Pipeline to build base256"
+                }
             }
         }
     }
