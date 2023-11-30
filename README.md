@@ -1,6 +1,6 @@
 Base 256 Encoding using Unicode (B256U)
 =======================================
-This repo contains a simple C++ program to represent binary data in B256U encoding. 
+This repo contains a simple C++ program to represent binary data in base 256 encoding using Unicode characters. Each Unicode character represents exactly one byte and vice versa: each byte is represented by exactly one Unicode character, e.g. byte 0 is represented by Unicode digit '0'.
 
 Advantages
 ----------
@@ -13,7 +13,7 @@ Advantages
 
 How does it work?
 -----------------
-Each Unicode character represents exactly one byte (and vice versa: each byte is represented by one Unicode character) - dead simple. The B256U alphabet of 256 possible Unicode characters consists of:
+The B256U alphabet of 256 possible Unicode characters consists of:
 
 1. the **10 digits** (0...9)
 2. the **26 uppercase letters** (A...Z) and the **26 lowercase letters** (a...z)
@@ -21,9 +21,9 @@ Each Unicode character represents exactly one byte (and vice versa: each byte is
 
 Typical use cases for B256U encoding are safe passwords, file checksums, identifiers and hashes.
 
-Requirements
-------------
-Just requires cmake and a C++ compiler.
+Build Requirements
+------------------
+Just cmake and a C++ compiler are required.
 
 Installation
 ------------
@@ -38,8 +38,9 @@ Execute in a terminal window:
 
 Examples
 --------
-* For 128-bit of data: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`
-* For 256-bit of data: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+128-bit of random data in base 256: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
+
+256-bit of random data in base 256: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
 How long does it take to break a random key or password?
 --------------------------------------------------------
