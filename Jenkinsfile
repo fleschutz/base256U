@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     currentBuild.displayName = "base256"
-                    currentBuild.description = "Pipeline for the base256 executable."
+                    currentBuild.description = "Pipeline to build the base256 executable."
                 }
                 sh 'cmake .'
                 sh 'make'
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Zip') {
             steps {
-                sh 'zip -r base256.zip .'
+                sh 'zip base256.zip README.md LICENSE base256'
             }
         }
     }
