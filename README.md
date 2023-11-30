@@ -15,9 +15,12 @@ How does it work?
 -----------------
 The B256U alphabet of 256 possible Unicode characters consists of:
 
-1. the **10 digits** (0...9)
-2. the **26 uppercase letters** (A...Z) and the **26 lowercase letters** (a...z)
-3. the **194 umlaut characters** (À, Á, Â, Ã, Ä, Å, ...)
+| Byte     | Unicode character                          | 
+|----------|--------------------------------------------|
+|  0...9   | '0'...'9' (10 digits)                      |  
+| 10...35  | 'A'...'Z' (26 uppercase letters)           |
+| 36...61  | 'a'...'z' (26 lowercase letters)           | 
+| 62...255 | 'À', 'Á', 'Â', ... (194 umlaut characters) |
 
 Typical use cases for B256U encoding are safe passwords, file checksums, identifiers and hashes.
 
