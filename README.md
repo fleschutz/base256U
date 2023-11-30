@@ -1,6 +1,6 @@
-Base 256 Encoding using Unicode (B256U)
-=======================================
-This repo contains a simple C++ program to represent binary data in base 256 encoding using Unicode characters. Each Unicode character represents exactly one byte and vice versa: each byte is represented by exactly one Unicode character, e.g. byte 0 is represented by Unicode digit '0'.
+Base 256 Encoding using Unicode
+===============================
+This repo contains a simple C++ program to represent binary data in base 256 encoding using Unicode characters (B256U). Each Unicode character represents exactly one byte and vice versa: each byte is represented by exactly one Unicode character, e.g. byte 0 is represented by Unicode digit '0'.
 
 Advantages
 ----------
