@@ -1,6 +1,6 @@
 # Platform-independent Makefile for CMake
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 2.6)
 
 project(base256)
 
