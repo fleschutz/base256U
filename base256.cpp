@@ -2,8 +2,6 @@
 #include <cstring>
 #include <iostream>
 #include <time.h>
-#include <chrono>
-#include <thread>
 using namespace std;
 typedef uint32_t Unicode;
 
@@ -75,21 +73,22 @@ int main(int argc, char *argv[])
 	cout << endl;
 	cout << "Examples of 128-bit of data in B256U Encoding" << endl;
 	cout << "---------------------------------------------" << endl;
+	
 	for (int i = 0; i < 100; i++)
 	{
+		// generate random binary data:
 		uint8_t binaryData[128 / 8];
 		randomizeData(binaryData, sizeof(binaryData));
 
-		// encode:
+		// encode and print it:
 		string text = encodeB256U(binaryData, sizeof(binaryData));
 		cout << "[" << text << "]\t ";
 
-		// decode and check:
+		// decode and check it:
 		uint8_t decodedData[sizeof(binaryData)] = {};
 		decodeB256U(text, decodedData);
 		if (memcmp(binaryData, decodedData, sizeof(binaryData)) != 0)
 			return 1; // check failed
 	}
-	std::this_thread::sleep_for(std::chrono::milliseconds(3000));
 	return 0;
 }
