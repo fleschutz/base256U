@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cmake --version'
-                sh 'cmake .'
+                sh 'cmake --fresh .'  // requires cmake 3.24 or newer
                 sh 'make --version'
                 sh 'make'
             }
