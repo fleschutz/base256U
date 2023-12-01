@@ -30,8 +30,8 @@ Installation
 ------------
 Execute in a terminal window: 
 ```
-> git clone https://github.com/fleschutz/base256unicode  # Or download und unzip the ZIP file (click green button)
-> cd base256unicode
+> git clone https://github.com/fleschutz/base256  # Or download und unzip the ZIP file (click green button)
+> cd base256
 > cmake .
 > make
 > ./base256
