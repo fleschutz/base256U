@@ -6,7 +6,7 @@ What is B256U?
 ---------------
 Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping from byte to Unicode is quite simple:
 
-| Byte     | Unicode                        | 
+| Byte     | Unicode                                    | 
 |----------|--------------------------------------------|
 | 0...9    | '0'...'9' (10 digits)                      |  
 | 10...35  | 'A'...'Z' (26 uppercase letters)           |
