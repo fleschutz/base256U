@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'cmake --version'
                 sh 'cmake .'
+                sh 'make --version'
                 sh 'make'
             }
         }
