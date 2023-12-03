@@ -22,11 +22,11 @@ Advantages
 * **It supports double-click** for copy & paste (no terminal characters in B256U) 
 * **It's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
 
-Requirements & Installation
----------------------------
-Just **cmake** and a **C++ compiler** are required. Then execute in a terminal window: 
+🔧 Requirements & Installation
+-------------------------------
+Requires **cmake** and a **C++ compiler**. Then execute in a terminal window: 
 ```
-> git clone https://github.com/fleschutz/base256  # Or download und unzip the ZIP file (click green button)
+> git clone https://github.com/fleschutz/base256  # or download und unzip the ZIP file (click the green button)
 > cd base256
 > cmake .
 > make
