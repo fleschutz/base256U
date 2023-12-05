@@ -13,8 +13,8 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 | 36 ... 61  | 'a' ... 'z'         | 26 lowercase letters  |
 | 62 ... 255 | 'À', 'Á', 'Â', ...  | 194 umlaut characters |
 
-Advantages
-----------
+✔️ Advantages
+--------------
 * **It's short**: just 16 Unicode characters represent 128-bit of data, 32 characters represent 256-bit of data
 * **It's safe**: people are forced to copy & paste it 
 * **It's easy to implement**: see the [source code](base256.cpp)
