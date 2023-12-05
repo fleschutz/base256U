@@ -74,8 +74,8 @@ void randomizeData(uint8_t *dataPtr, size_t dataSize)
 int main(int argc, char *argv[])
 {
 	cout << endl;
-	cout << "128-bit of random data encoded in B256U" << endl;
-	cout << "---------------------------------------" << endl;
+	cout << "Random 128-bits in B256U Encoding" << endl;
+	cout << "---------------------------------" << endl;
 	
 	for (int i = 0; i < 100; i++)
 	{
