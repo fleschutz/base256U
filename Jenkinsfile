@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		echo "Building from branch: ${env.BRANCH_NAME}, build number: ${env.BUILD_NUMBER}"
+				echo "Pulled from ${env.GIT_URL}, branch ${env.GIT_BRANCH}, commit {$env.GIT_COMMIT} ..."
+				echo "Starting build number ${env.BUILD_NUMBER} ..."
                 sh 'cmake --version'
                 sh 'rm -f CMakeCache.txt'
                 sh 'cmake .'
