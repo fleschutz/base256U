@@ -1,7 +1,7 @@
 pipeline {
     agent any  
     stages {
-        stage('Build') {
+        stage ('Build') {
             steps {
 		echo "Pulled from ${env.GIT_URL}, branch ${env.GIT_BRANCH}, commit {$env.GIT_COMMIT} ..."
 		echo "Starting build number ${env.BUILD_NUMBER} ..."
@@ -12,19 +12,19 @@ pipeline {
                 sh 'make'
             }
         }
-        stage('Test') {
+        stage ('Test') {
             steps {
                 sh './base256'
             }
         }
-        stage('Zip') {
+        stage ('Zip') {
             steps {
                 sh 'zip base256.zip README.md LICENSE base256'
             }
         }
-	stage('Archive') {
+	stage ('Archive') {
 		steps {
-			archiveArtifacts artifacts: 'base256.zip', fingerprint: true, onlyIfSuccessful: true
+                    archiveArtifacts artifacts: 'base256.zip', fingerprint: true, onlyIfSuccessful: true
 		}
 	}
     }
