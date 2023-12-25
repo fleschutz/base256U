@@ -24,9 +24,9 @@ pipeline {
                 sh 'zip base256.zip README.md LICENSE base256'
             }
         }
-		stage('Archive') {
-			steps {
-				archiveArtifacts artifacts: 'base256.zip', fingerprint: true, onlyIfSuccessful: true
-			}
-    }
+	stage('Archive') {
+		steps {
+			archiveArtifacts artifacts: 'base256.zip', fingerprint: true, onlyIfSuccessful: true
+		}
+	}
 }
