@@ -6,14 +6,14 @@ pipeline {
 		echo "Pulled from ${env.GIT_URL}, branch ${env.GIT_BRANCH}, commit {$env.GIT_COMMIT} ..."
 		echo "Starting build number ${env.BUILD_NUMBER} ..."
                 sh 'git fsck'
-                sh 'git status'
                 sh 'cmake --version'
                 sh 'make --version'
 	    }
 	}
         stage ('Build') {
             steps {
-                sh 'rm CMakeCache.txt'
+                sh 'git clean'
+                sh 'git status'
                 sh 'cmake .'
                 sh 'make'
             }
