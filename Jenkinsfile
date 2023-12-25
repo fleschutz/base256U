@@ -1,11 +1,6 @@
 pipeline {
     agent any  
     stages {
-        stage('Checkout') {
-	    	steps {
-				checkout scm
-	    	}
-        }
         stage('Build') {
             steps {
                 script {
@@ -29,10 +24,9 @@ pipeline {
                 sh 'zip base256.zip README.md LICENSE base256'
             }
         }
-    }
-    post {
-        always {
-            archiveArtifacts artifacts: 'base256.zip', fingerprint: true, onlyIfSuccessful: true
-        }
+		stage('Archive') {
+			steps {
+				archiveArtifacts artifacts: 'base256.zip', fingerprint: true, onlyIfSuccessful: true
+			}
     }
 }
