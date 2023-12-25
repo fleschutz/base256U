@@ -11,7 +11,7 @@ pipeline {
 	}
         stage ('Build') {
             steps {
-		echo "Starting build #${env.BUILD_NUMBER} on host ${env.HOSTNAME} ..."
+		echo "Starting build #${env.BUILD_NUMBER} on host ${env.NODE_NAME} ..."
                 sh 'git clean -d --force'
                 sh 'git status'
                 sh 'cmake .'
