@@ -4,7 +4,6 @@ pipeline {
         stage ('Check') {
             steps {
 		echo "Pulled from ${env.GIT_URL}, branch ${env.GIT_BRANCH}, commit {$env.GIT_COMMIT} ..."
-		echo "Starting build number ${env.BUILD_NUMBER} ..."
                 sh 'git fsck'
                 sh 'cmake --version'
                 sh 'make --version'
@@ -12,6 +11,7 @@ pipeline {
 	}
         stage ('Build') {
             steps {
+		echo "Starting build #${env.BUILD_NUMBER} on host ${env.HOSTNAME} ..."
                 sh 'git clean -d --force'
                 sh 'git status'
                 sh 'cmake .'
