@@ -12,7 +12,7 @@ pipeline {
 	}
         stage ('Build') {
             steps {
-                sh 'git clean --force'
+                sh 'git clean -d --force'
                 sh 'git status'
                 sh 'cmake .'
                 sh 'make'
