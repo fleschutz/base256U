@@ -1,20 +1,19 @@
 pipeline {
     agent any  
     stages {
-        stage ('Check') {
+        stage ('Cleanup') {
             steps {
 		echo "Pulled from ${env.GIT_URL}, branch ${env.GIT_BRANCH}, commit {$env.GIT_COMMIT} ..."
-                sh 'git fsck'
-                sh 'cmake --version'
-                sh 'make --version'
+                sh 'git clean -d --force'
+                sh 'git status'
 	    }
 	}
         stage ('Build') {
             steps {
 		echo "Starting build #${env.BUILD_NUMBER} on ${env.NODE_NAME} node ..."
-                sh 'git clean -d --force'
-                sh 'git status'
+                sh 'cmake --version'
                 sh 'cmake .'
+                sh 'make --version'
                 sh 'make'
             }
         }
