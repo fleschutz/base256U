@@ -13,14 +13,21 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 | 36 ... 61  | 'a' ... 'z'         | 26 lowercase letters  |
 | 62 ... 255 | 'À', 'Á', 'Â', ...  | 194 umlaut characters |
 
-✔️ Advantages
---------------
-* **It's short**: just 16 Unicode characters represent 128-bit of data, 32 characters represent 256-bit of data
-* **It's safe**: people are forced to copy & paste it 
-* **It's easy to implement**: see the [source code](base256.cpp)
-* **It's easy to recognize**: lots of umlauts (see the examples below)
-* **It supports double-click** for copy & paste (no terminal characters in B256U) 
-* **It's backward compatible**: B256U uses Unicode 1.0 only (highest code point used is 385)
+✔️ Advantages of B256U
+-----------------------
+* **It's short:** encode 128-bit of data with 16 Unicode characters only.
+* **It's easy to recognize:** lots of umlauts, see the examples below.
+* **It's safe to use:** nearly impossible to remember (due to umlauts), so people are forced to copy & paste it.
+* **Supports copy & paste with double-clicking:** all Unicode characters are non-terminal ones.
+* **It's easy to implement:** see the [source code](base256.cpp)
+* **It's backward compatible:** requires Unicode version 1.0 only (highest code point is 385 in B256U).
+
+Examples of B256U
+-----------------
+128-bit of random data in B256U: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
+
+256-bit of random data in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+
 
 🔧 Requirements & Installation
 -------------------------------
@@ -32,12 +39,6 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 > make
 > ./base256
 ```
-
-Examples
---------
-128-bit of random data in base 256: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
-
-256-bit of random data in base 256: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
 How long does it take to break a random key or password?
 --------------------------------------------------------
