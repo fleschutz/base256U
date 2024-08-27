@@ -19,7 +19,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 * **It's easy to recognize:** lots of umlauts, see the examples below.
 * **It's safe to use:** nearly impossible to remember (due to umlauts), so people are forced to copy & paste it.
 * **Supports copy & paste with double-clicking:** all Unicode characters are non-terminal ones.
-* **It's easy to implement:** see the [source code](base256.cpp)
+* **It's easy to implement:** see the [main.cpp source code](main.cpp)
 * **It's backward compatible:** requires Unicode version 1.0 only (highest code point is 385 in B256U).
 
 Examples of B256U
