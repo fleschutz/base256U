@@ -15,19 +15,12 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 
 ✔️ Advantages of B256U
 -----------------------
-* **It's short:** encode 128-bit of data with 16 Unicode characters only.
+* **It's short:** encode 128-bit of data with 16 Unicode characters only, e.g. 5iŗ3īÛźUKĺŰÑÞbŒŜ.
 * **It's easy to recognize:** lots of umlauts, see the examples below.
 * **It's safe to use:** nearly impossible to remember (due to umlauts), so people are forced to copy & paste it.
 * **Supports copy & paste with double-clicking:** all Unicode characters are non-terminal ones.
 * **It's easy to implement:** see the [source code in main.cpp](main.cpp)
 * **Supports every Unicode version:** the highest code point is 385 only, so Unicode 1.0 or higher is required.
-
-Examples of B256U
------------------
-128-bit of random data in B256U: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
-
-256-bit of random data in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
-
 
 🔧 Installation
 ----------------
@@ -40,11 +33,19 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 > ./base256
 ```
 
+
+Examples of B256U
+-----------------
+128-bit of random data in B256U: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
+
+256-bit of random data in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+
+
 How long does it take to break a random key or password?
 --------------------------------------------------------
 Trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
 
-| Key size | Time needed                               | Key example                        |
+| Key Size | Time Needed                               | Key Example                        |
 |----------|-------------------------------------------|------------------------------------|
 |  40-bit  | about 9 minutes                           |                                    |
 |  56-bit  | about a year                              |                                    |
