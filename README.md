@@ -4,7 +4,7 @@ This repo contains a small C++ program to represent binary data in base 256 enco
 
 What is B256U?
 ---------------
-Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping from byte to Unicode is quite simple:
+Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping of Byte vs Unicode is quite simple:
 
 | Byte       | Unicode             | Description           |
 |------------|---------------------|-----------------------|
@@ -20,7 +20,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 * **It's safe to use:** nearly impossible to remember (due to umlauts), so people are forced to copy & paste it.
 * **Supports copy & paste with double-clicking:** all Unicode characters are non-terminal ones.
 * **It's easy to implement:** see the [source code in main.cpp](main.cpp)
-* **It's backward compatible:** requires Unicode version 1.0 only (highest code point is 385 in B256U).
+* **Supports every Unicode version:** the highest code point is 385 only, so Unicode 1.0 or higher is required.
 
 Examples of B256U
 -----------------
@@ -29,8 +29,8 @@ Examples of B256U
 256-bit of random data in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
 
-🔧 Requirements & Installation
--------------------------------
+🔧 Installation
+----------------
 Requires **cmake** and a **C++ compiler**. Then execute in a terminal window: 
 ```
 > git clone https://github.com/fleschutz/base256  # or download und unzip the ZIP file (click the green button)
