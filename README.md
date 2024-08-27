@@ -48,9 +48,9 @@ Trying every possible key or password (called a 'brute force attack') at one bil
 | Key Size | Time Needed                               | Key Example                        |
 |----------|-------------------------------------------|------------------------------------|
 |  40-bit  | about 9 minutes                           | `ŞŰÀ8Œ`                            |
-|  56-bit  | about a year                              | `ŖÔń÷Ī7ė`                          |
+|  56-bit  | about a year                              | `ŖÔńĪ7ėñ`                          |
 | 128-bit  | about 5,783,128,169,837,158,197,871 years | `ĤŗwĹĦñŧīĳēaqöĜĖŅ`                 |
-| 256-bit  | never, for all practical purposes         | `ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔń÷Ī7ėëŷò` |
+| 256-bit  | never, for all practical purposes         | `ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔńiĪ7ėëŷò` |
 
 📧 Feedback
 ------------
