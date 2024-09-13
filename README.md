@@ -18,8 +18,8 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 * **Ultra compact:** e.g. just 16 Unicode characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
 * **Easy to recognize:** it contains a lot of umlauts.
 * **Safe to use:** nearly impossible to remember, so people are forced to copy & paste it.
-* **Supports double-clicking:** for copy & paste (all Unicode characters are non-terminal ones).
-* **Supports all Unicode versions:** highest code point is 385, so Unicode 1.0 or higher is required (current version is 13.0).
+* **Supports double-clicking** for copy & paste, the Unicode characters are all non-terminal ones.
+* **Supports all Unicode versions** due to highest code point 385, so Unicode 1.0 or higher is required.
 * **Easy to implement:** see the [source code in main.cpp](main.cpp)
 
 🔧 Installation
