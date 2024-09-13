@@ -28,7 +28,7 @@ Unicode alphabetB256U[256] =
 386,387
 };
 
-string encodeB256U(const uint8_t *dataPtr, size_t dataSize)
+string encodeInB256U(const uint8_t *dataPtr, size_t dataSize)
 {
 	string result = {};
 	for (size_t i = 0; i < dataSize; i++)
@@ -63,7 +63,7 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 	}
 }
 
-void randomizeData(uint8_t *dataPtr, size_t dataSize)
+void generateRandomData(uint8_t *dataPtr, size_t dataSize)
 {
 	unsigned int seed = (unsigned int)time(nullptr) + rand() + (unsigned int)(unsigned long)dataPtr + (unsigned int)dataSize + dataPtr[0];
 	srand(seed);
@@ -79,12 +79,11 @@ int main(int argc, char *argv[])
 	
 	for (int i = 0; i < 100; i++)
 	{
-		// generate random binary data:
 		uint8_t binaryData[128 / 8];
-		randomizeData(binaryData, sizeof(binaryData));
+		generateRandomData(binaryData, sizeof(binaryData));
 
 		// encode and print it:
-		string text = encodeB256U(binaryData, sizeof(binaryData));
+		string text = encodeInB256U(binaryData, sizeof(binaryData));
 		cout << "[" << text << "]\t ";
 
 		// decode and check it:
