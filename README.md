@@ -19,8 +19,8 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 * **Easy to recognize:** it contains a lot of umlauts.
 * **Safe to use:** nearly impossible to remember (due to umlauts), so people are forced to copy & paste it.
 * **Comfortable copy & paste:** supports double-clicking to copy it (all Unicode characters are non-terminal ones).
+* **Supports all Unicode versions:** highest code point is 385, so Unicode 1.0 or higher is required (current version is 13.0).
 * **Easy to implement:** see the [source code in main.cpp](main.cpp)
-* **Supported by old Unicode versions:** the highest code point is 385 only, so Unicode 1.0 or higher is required.
 
 🔧 Installation
 ----------------
