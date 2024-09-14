@@ -15,7 +15,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 
 ✔️ Advantages of B256U
 -----------------------
-* **Ultra compact:** e.g. just 16 Unicode characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
+* **Ultra compact:** e.g. 16 Unicode characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
 * **Easy to recognize** due to the umlaut characters.
 * **Safe to use:** nearly impossible to remember, so people are forced to copy & paste it.
 * **Supports double-clicking** for comfortable copy & paste (all Unicode characters are non-terminal ones).
