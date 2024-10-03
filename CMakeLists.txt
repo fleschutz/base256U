@@ -1,4 +1,4 @@
-# Platform-independent CMakefile to build Base256
+# Platform-independent CMakefile to build base256
 # -----------------------------------------------
 
 cmake_minimum_required (VERSION 3.5)
