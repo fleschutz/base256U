@@ -1,9 +1,9 @@
-Base 256 Encoding using Unicode (B256U)
-=======================================
-This repo contains a small C++ program to represent binary data in base 256 encoding by using Unicode characters. Typical use cases are safe passwords, digital keys, file checksums, identifiers, hashes and very big numbers.
+The Base256 Encoding based on Unicode (Base256U)
+================================================
+This repo contains a small C++ program to represent binary data in base256 encoding by using Unicode characters. Typical use cases are safe passwords, digital keys, file checksums, identifiers, hashes and very big numbers.
 
-What is B256U?
----------------
+What is Base256U?
+-----------------
 Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping of Byte vs Unicode is quite simple:
 
 | Byte       | Unicode             | Description           |
@@ -13,8 +13,8 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 | 36 ... 61  | 'a' ... 'z'         | 26 lowercase letters  |
 | 62 ... 255 | 'À', 'Á', 'Â', ...  | 194 umlaut characters |
 
-✔️ Advantages of B256U
------------------------
+✔️ Advantages of Base256U
+-------------------------
 * **Ultra compact:** e.g. 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
 * **Easy to recognize** due to the umlaut characters.
 * **Safe to use:** nearly impossible to remember, so people are forced to copy & paste it.
@@ -34,10 +34,10 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 ```
 
 
-Examples of B256U
------------------
-* 128 bits in B256U: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
-* 256 bits in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+Examples of Base256U
+--------------------
+* 128 bit: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
+* 256 bits: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
 
 Other Encoding Standards
