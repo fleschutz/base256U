@@ -6,7 +6,7 @@
 using namespace std;
 typedef uint32_t Unicode;
 
-Unicode alphabetB256U[256] =
+Unicode alphabet[256] =
 {
 '0','1','2','3','4','5','6','7','8','9',			  // 10 digits
 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',  // 26 uppercase letters
@@ -28,12 +28,12 @@ Unicode alphabetB256U[256] =
 386,387
 };
 
-string encodeInB256U(const uint8_t *dataPtr, size_t dataSize)
+string encodeBase256U(const uint8_t *dataPtr, size_t dataSize)
 {
 	string result = {};
 	for (size_t i = 0; i < dataSize; i++)
 	{	
-		Unicode character = alphabetB256U[dataPtr[i]];
+		Unicode character = alphabet[dataPtr[i]];
 		if (character >= 128)
 		{
 			result.push_back(192 + (character >> 6));
@@ -45,7 +45,7 @@ string encodeInB256U(const uint8_t *dataPtr, size_t dataSize)
 	return result;
 }
 
-void decodeB256U(const string& string, uint8_t *dataPtr)
+void decodeBase256U(const string& string, uint8_t *dataPtr)
 {
 	for (size_t i = 0; i < string.size(); i++)
 	{
@@ -54,7 +54,7 @@ void decodeB256U(const string& string, uint8_t *dataPtr)
 			unicode = (unicode - 192) << 6 | ((unsigned char)string[++i] - 128) & 63;
 		for (unsigned int j = 0; j < 256; j++)
 		{
-			if (unicode == alphabetB256U[j])
+			if (unicode == alphabet[j])
 			{
 				*dataPtr++ = (uint8_t)j;
 				break;
@@ -74,8 +74,8 @@ void generateRandomData(uint8_t *dataPtr, size_t dataSize)
 int main(int argc, char *argv[])
 {
 	cout << endl;
-	cout << "Random 128-bits in B256U Encoding" << endl;
-	cout << "---------------------------------" << endl;
+	cout << "Random 128-bits in Base256U Encoding" << endl;
+	cout << "------------------------------------" << endl;
 	
 	for (int i = 0; i < 100; i++)
 	{
@@ -83,12 +83,12 @@ int main(int argc, char *argv[])
 		generateRandomData(binaryData, sizeof(binaryData));
 
 		// encode and print it:
-		string text = encodeInB256U(binaryData, sizeof(binaryData));
+		string text = encodeBase256U(binaryData, sizeof(binaryData));
 		cout << "[" << text << "]\t ";
 
 		// decode and check it:
 		uint8_t decodedData[sizeof(binaryData)] = {};
-		decodeB256U(text, decodedData);
+		decodeBase256U(text, decodedData);
 		if (memcmp(binaryData, decodedData, sizeof(binaryData)) != 0)
 			return 1; // check failed
 	}
