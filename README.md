@@ -57,7 +57,7 @@ Other Encoding Standards
 
 How long does it take to break a random key or password?
 --------------------------------------------------------
-Required is a good random generator. Then trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
+Trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
 
 | Key Size | Key Example                        | Maximum Time Needed                       | 
 |----------|------------------------------------|-------------------------------------------|
