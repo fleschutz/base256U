@@ -36,9 +36,22 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 
 Examples of B256U
 -----------------
-128-bit of random data in B256U: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
+* 128 bits in B256U: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`, `ŋôBĉOÍŬįēĳmōįUĞÜ`, `Sőś6ŬŹŠęűöìÇthTK`.
+* 256 bits in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
 
-256-bit of random data in B256U: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`, `āLë2lÏäöĥųŧpğĨķŇHĺ4LăsŸđĵ_űLeYhĩ`, `ÂŚÔJàįŶļcvàPĈčĲċĉĲĂūęŻÉĢJĸķ3ğPĭŠ`
+
+Other Encoding Standards
+------------------------
+
+| Base | Name        | Alphabet                      | Example |
+|------|-------------|-------------------------------|---------|
+|    2 | Bit         | 0 or 1                        | 0101101 |
+|    8 | Octal       | 0-7                           | 7734124 |
+|   10 | Decimal     | 0-9                           | 3849834 |
+|   16 | Hexadecimal | 0-9,a-f                       | 7a9ff34 |
+|   36 | Base36      | 0-9,A-Z                       | 7RT99XQ |
+|   45 | Base45      | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |
+|   64 | Base64      | A-Z,a-z,0-9,+,-               | zA8r+8q |
 
 
 How long does it take to break a random key or password?
