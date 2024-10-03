@@ -1,17 +1,17 @@
 Base256U - Base256 Encoding based on Unicode
 ============================================
-This repo contains a small C++ program to represent binary data in base256 encoding by using Unicode characters. Typical use cases are safe passwords, digital keys, file checksums, identifiers, hashes and very big numbers.
+This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are safe passwords, digital keys, file checksums, identifiers, hashes and very big numbers.
 
 What is Base256U?
 -----------------
 Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping of Byte vs Unicode is quite simple:
 
-| Byte       | Unicode             | Description           |
-|------------|---------------------|-----------------------|
-| 0 ... 9    | '0' ... '9'         | 10 digits             |
-| 10 ... 35  | 'A' ... 'Z'         | 26 uppercase letters  |
-| 36 ... 61  | 'a' ... 'z'         | 26 lowercase letters  |
-| 62 ... 255 | 'À', 'Á', 'Â', ...  | 194 umlaut characters |
+| Byte   | Unicode             | Description           |
+|--------|---------------------|-----------------------|
+|    0-9 | '0'-'9'             | 10 digits             |
+|  10-35 | 'A'-'Z'             | 26 uppercase letters  |
+|  36-61 | 'a'-'z'             | 26 lowercase letters  |
+| 62-255 | 'À', 'Á', 'Â', ...  | 194 umlaut characters |
 
 ✔️ Advantages of Base256U
 -------------------------
@@ -57,7 +57,7 @@ Other Encoding Standards
 
 How long does it take to break a random key or password?
 --------------------------------------------------------
-Required is a good random generator. Then trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
+Trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
 
 | Key Size | Key Example                        | Maximum Time Needed                       | 
 |----------|------------------------------------|-------------------------------------------|
