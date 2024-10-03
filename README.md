@@ -26,8 +26,8 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 ----------------
 Requires **cmake** and a **C++ compiler**. Then execute in a terminal window: 
 ```
-> git clone https://github.com/fleschutz/base256  # or download und unzip the ZIP file (click the green button)
-> cd base256
+> git clone https://github.com/fleschutz/Base256U  # or download und unzip the ZIP file (click the green button)
+> cd Base256U
 > cmake .
 > make
 > ./base256
