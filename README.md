@@ -1,5 +1,5 @@
-Base256U - Base256 Encoding based on Unicode
-============================================
+Base256 Encoding in Unicode (Base256U)
+======================================
 This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are safe passwords, digital keys, file checksums, identifiers, hashes and very big numbers.
 
 What is Base256U?
