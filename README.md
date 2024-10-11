@@ -1,8 +1,8 @@
-Base256 Encoding in Unicode (Base256U)
+Base256 Encoding in Unicode (base256U)
 ======================================
 This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are safe passwords, digital keys, file checksums, identifiers, hashes and very big numbers.
 
-What is Base256U?
+What is base256U?
 -----------------
 Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. The mapping of Byte vs Unicode is quite simple:
 
@@ -13,28 +13,28 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 |  36-61 | 'a'-'z'             | 26 lowercase letters  |
 | 62-255 | 'À', 'Á', 'Â', ...  | 194 umlaut characters |
 
-✔️ Advantages of Base256U
+✔️ Advantages of base256U
 -------------------------
 * **Ultra compact:** e.g. 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
 * **Easy to recognize** due to the umlaut characters.
 * **Safe to use:** nearly impossible to remember, so people are forced to copy & paste it.
 * **Supports double-clicking** for comfortable copy & paste (all Unicode characters are non-terminal ones).
 * **Supports all Unicode versions** due to highest code point 385 (requires Unicode 1.0 or higher).
-* **Easy to implement:** see the [source code in main.cpp](main.cpp)
+* **Easy to implement:** see the [source code in base256U.cpp](base256U.cpp)
 
 🔧 Installation
 ----------------
 Requires **cmake** and a **C++ compiler**. Then execute in a terminal window: 
 ```
-> git clone https://github.com/fleschutz/Base256U  # or download und unzip the ZIP file (click the green button)
-> cd Base256U
+> git clone https://github.com/fleschutz/base256U  # or download und unzip the ZIP file (click the green button)
+> cd base256U
 > cmake .
 > make
-> ./base256
+> ./base256U
 ```
 
 
-Examples of Base256U
+Examples of base256U
 --------------------
 * 64 bits: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
 * 128 bits: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
