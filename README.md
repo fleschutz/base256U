@@ -50,6 +50,7 @@ Other Encoding Standards
 |    8 | Octal                                                    | 0-7                           | 7734124 |          |
 |   10 | Decimal                                                  | 0-9                           | 3849834 |          |
 |   16 | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) | 0-9,a-f (case insensitive)    | 7a9ff34 | +100%    |
+|   32 | [Base32](https://en.wikipedia.org/wiki/Base32)           | A-Z,2-7                       | S7FFQZB | +60%     |
 |   36 | [Base36](https://en.wikipedia.org/wiki/Base36)           | 0-9,A-Z                       | 7RT99XQ |          |
 |   45 | Base45                                                   | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |          |
 |   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | +33%/37% |
