@@ -19,7 +19,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 * **Easy to recognize** due to the umlaut characters.
 * **Safe to use:** can't be remembered (no need to hide it), so people are forced to copy & paste it.
 * **Supports double-clicking** for comfortable copy & paste (all Unicode characters are non-terminal ones).
-* **Supports all Unicode versions** due to highest code point 385 (requires Unicode 1.0 or higher).
+* **Supports all Unicode versions** due to highest code point 387 (requires Unicode 1.0 or higher).
 * **Easy to implement:** see the [source code in base256U.cpp](base256U.cpp)
 
 🔧 Installation
