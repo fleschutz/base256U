@@ -6,7 +6,7 @@ What is base256U?
 -----------------
 Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. Therefore, the byte vs Unicode mapping is dead simple:
 
-| Byte   | Unicode                            | Description           |
+| Byte   | Unicode Character                  | Description           |
 |--------|------------------------------------|-----------------------|
 |    0-9 | '0'-'9'                            | 10 digits             |
 |  10-35 | 'A'-'Z'                            | 26 uppercase letters  |
