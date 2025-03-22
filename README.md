@@ -13,8 +13,8 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 |  36-61 | 'a'-'z'                            | 26 lowercase letters  |
 | 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ..., 'ƃ'  | 194 umlaut characters |
 
-✔️ Advantages of base256U
--------------------------
+✔️ Advantages
+--------------
 * **Ultra compact**, e.g. just 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
 * **Easy to recognize** due to the umlaut characters.
 * **Safe to use:** can't be remembered (no need to hide it), so people are forced to copy & paste it.
@@ -33,12 +33,11 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 > ./base256U
 ```
 
-
-Examples of base256U
---------------------
-* 64 bits: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
-* 128 bits: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
-* 256 bits: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
+Examples
+--------
+* For 64 bits: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
+* For 128 bits: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
+* For 256 bits: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 
 
 Other Encoding Standards
