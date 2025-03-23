@@ -1,6 +1,6 @@
 Base256 Encoding in Unicode (base256U)
 ======================================
-This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representing safe passwords, digital keys, file checksums, identifiers, hashes, or very big numbers.
+This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representing safe passwords, digital keys, file checksums, identifiers, hashes, very big numbers, or data in character-limited messengers.
 
 What is base256U?
 -----------------
@@ -33,11 +33,12 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 > ./base256U
 ```
 
-Examples
---------
+🎉 Examples
+------------
 * For 64 bits: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
 * For 128 bits: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
 * For 256 bits: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
+* [zeichensalat](https://karme.de/zeichensalat/): a tool to make/run compressed executables copy/pastes using less than 500 unicode characters. It is intended to be used on the fediverse (or in  chats).
 
 
 Other Encoding Standards
