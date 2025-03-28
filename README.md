@@ -11,7 +11,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 |    0-9 | '0'-'9'                            | 10 digits             |
 |  10-35 | 'A'-'Z'                            | 26 uppercase letters  |
 |  36-61 | 'a'-'z'                            | 26 lowercase letters  |
-| 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ..., 'ƃ'  | 194 diacritic letters |
+| 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ..., 'ƃ'  | 194 accent letters    |
 
 ✔️ Advantages
 --------------
