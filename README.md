@@ -46,7 +46,7 @@ Other Encoding Standards
 
 | Base | Name                                                     | Alphabet                      | Example | Overhead |
 |------|----------------------------------------------------------|-------------------------------|---------|----------|
-|    2 | Bit                                                      | 0 or 1                        | 0101101 |          |
+|    2 | Binary                                                   | 0 or 1                        | 0101101 | +800%    |
 |    8 | Octal                                                    | 0-7                           | 7734124 |          |
 |   10 | Decimal                                                  | 0-9                           | 3849834 |          |
 |   16 | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) | 0-9,a-f (case insensitive)    | 7a9ff34 | +100%    |
