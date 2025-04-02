@@ -11,7 +11,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 |    0-9 | '0'-'9'                            | 10 digits             |
 |  10-35 | 'A'-'Z'                            | 26 uppercase letters  |
 |  36-61 | 'a'-'z'                            | 26 lowercase letters  |
-| 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ..., 'ƃ'  | 194 accent letters    |
+| 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ...       | 194 accent letters    |
 
 ✔️ Advantages
 --------------
@@ -41,8 +41,8 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 * [zeichensalat](https://karme.de/zeichensalat/): a tool to make/run compressed executables copy/pastes using less than 500 unicode characters. It is intended to be used on the fediverse (or in  chats).
 
 
-Other Encoding Standards
-------------------------
+Comparison of Encoding Standards
+--------------------------------
 
 | Base | Name                                                     | Alphabet                      | Example | Overhead |
 |------|----------------------------------------------------------|-------------------------------|---------|----------|
@@ -55,6 +55,7 @@ Other Encoding Standards
 |   45 | Base45                                                   | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |          |
 |   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | +33%/37% |
 |   85 | [Base85](https://en.wikipedia.org/wiki/Ascii85)          | !,",#,...,z                   | 9jqo    | +25%     |
+|  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | +~75%    |
 
 
 How long does it take to break a random key or password?
