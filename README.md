@@ -35,14 +35,14 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 
 🎉 Examples
 ------------
-* For 64 bits: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
-* For 128 bits: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
-* For 256 bits: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
+* 64-bit key: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
+* 128-bit key: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
+* 256-bit key: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 * [zeichensalat](https://karme.de/zeichensalat/): a tool to make/run compressed executables copy/pastes using less than 500 unicode characters. It is intended to be used on the fediverse (or in  chats).
 
 
-Comparison of Encoding Standards
---------------------------------
+⚖️ Comparison of Encoding Standards
+------------------------------------
 
 | Base | Name                                                     | Alphabet                      | Example | Overhead |
 |------|----------------------------------------------------------|-------------------------------|---------|----------|
