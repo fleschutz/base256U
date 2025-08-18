@@ -4,7 +4,7 @@ This repo contains a C++ sample implementation to represent binary data in base2
 
 What is base256U?
 -----------------
-Each byte is represented by exactly one Unicode character and vice versa each Unicode character represents exactly one byte. Therefore, the byte vs Unicode mapping is dead simple:
+Each byte is represented by exactly one Unicode character (and vice versa). The byte to Unicode mapping is dead simple:
 
 | Byte   | Unicode Character                  | Description           |
 |--------|------------------------------------|-----------------------|
@@ -15,7 +15,7 @@ Each byte is represented by exactly one Unicode character and vice versa each Un
 
 ✔️ Advantages
 --------------
-* **Ultra compact**, e.g. just 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data.
+* **Ultra compact**, e.g. 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` encode 128-bit of data!
 * **Easy to recognize** due to the accent letters.
 * **Safe to use:** can't be remembered (no need to hide it), so people are forced to copy & paste it.
 * **Supports double-clicking** for comfortable copy & paste (all Unicode characters are non-terminal ones).
