@@ -38,7 +38,7 @@ Requires a **C++ compiler** and **cmake**. Then execute in a terminal window:
 * 64-bit keys: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
 * 128-bit keys: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
 * 256-bit keys: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
-* [zeichensalat](https://karme.de/zeichensalat/): a tool to make/run compressed executables copy/pastes using less than 500 unicode characters. It is intended to be used on the fediverse (or in  chats).
+* [zeichensalat](https://karme.de/zeichensalat/): a tool to make compressed executables for copy & paste using less than 500 unicode characters. It is intended to be used on the fediverse (or in chats).
 
 
 ⚖️ Other Encoding Standards
