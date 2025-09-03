@@ -24,7 +24,7 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 
 🔧 Installation
 ----------------
-Requires **cmake** and a **C++ compiler**. Then execute in a terminal window: 
+Requires a **C++ compiler** and **cmake**. Then execute in a terminal window: 
 ```
 > git clone https://github.com/fleschutz/base256U  # or download und unzip the ZIP file (click the green button)
 > cd base256U
@@ -41,8 +41,8 @@ Requires **cmake** and a **C++ compiler**. Then execute in a terminal window:
 * [zeichensalat](https://karme.de/zeichensalat/): a tool to make/run compressed executables copy/pastes using less than 500 unicode characters. It is intended to be used on the fediverse (or in  chats).
 
 
-⚖️ Comparison of Encoding Standards
-------------------------------------
+⚖️ Other Encoding Standards
+----------------------------
 
 | Base | Name                                                     | Alphabet                      | Example | Overhead |
 |------|----------------------------------------------------------|-------------------------------|---------|----------|
@@ -71,7 +71,7 @@ Trying every possible key or password (called a 'brute force attack') at one bil
 
 🤝 Contributing
 ----------------
-* Contributions, suggestions, and improvements are welcome!
+* Contributions, suggestions, and improvements are always welcome!
 * Open an Issue if you encounter bugs or have feature ideas.
 * Create a Pull Request if you'd like to improve something.
 * Or just send your feedback to: markus.fleschutz [at] gmail.com
