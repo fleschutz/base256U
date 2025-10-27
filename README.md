@@ -17,7 +17,7 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 
 ✔️ Advantages
 --------------
-* **Ultra compact**, e.g. 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` encode 128-bit of data!
+* **Ultra compact**, e.g. 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data!
 * **Easy to recognize** due to the accent letters.
 * **Safe to use:** can't be remembered, so people are forced to copy & paste it (no need to hide it).
 * **Supports double-clicking** for comfortable copy & paste (all Unicode characters are non-terminal ones).
