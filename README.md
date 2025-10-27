@@ -1,5 +1,5 @@
-Base256 Encoding in Unicode (=base256U)
-=======================================
+base256U: Base256 Encoding in Unicode
+=====================================
 This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representing safe passwords, digital keys, file checksums, identifiers, hashes, extremely big numbers, or data in character-limited messengers.
 
 [![CMake on multiple platforms](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml)
