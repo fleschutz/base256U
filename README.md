@@ -76,7 +76,6 @@ Trying every possible key or password (called a 'brute force attack') at one bil
 * Contributions, suggestions, and improvements are always welcome!
 * Open an Issue if you encounter bugs or have feature ideas.
 * Create a Pull Request if you'd like to improve something.
-* Or just send your feedback to: markus.fleschutz [at] gmail.com
 
 📜 License & Copyright
 -----------------------
