@@ -8,7 +8,7 @@ typedef uint32_t Unicode;
 
 Unicode alphabet[256] =
 {
-'0','1','2','3','4','5','6','7','8','9',			  // 10 digits
+'0','1','2','3','4','5','6','7','8','9',                          // 10 digits
 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',  // 26 uppercase letters
 'Q','R','S','T','U','V','W','X','Y','Z',
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',  // 26 lowercase letters
@@ -25,11 +25,10 @@ Unicode alphabet[256] =
 338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,
 354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,
 370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,
-386,387
-// NOTE: × (=215) and ÷ (=247) have been skipped: both are math operators, not letters
-};
+386,387 // NOTE: × (=215) and ÷ (=247) have been skipped: both are math operators, not letters
+}; 
 
-string encodeBase256U(const uint8_t *dataPtr, size_t dataSize)
+string encodeToBase256U(const uint8_t *dataPtr, size_t dataSize)
 {
 	string result = {};
 	for (size_t i = 0; i < dataSize; i++)
@@ -46,7 +45,7 @@ string encodeBase256U(const uint8_t *dataPtr, size_t dataSize)
 	return result;
 }
 
-void decodeBase256U(const string& string, uint8_t *dataPtr)
+void decodeFromBase256U(const string& string, uint8_t *dataPtr)
 {
 	for (size_t i = 0; i < string.size(); i++)
 	{
@@ -84,14 +83,15 @@ int main(int argc, char *argv[])
 		generateRandomData(binaryData, sizeof(binaryData));
 
 		// encode and print it:
-		string text = encodeBase256U(binaryData, sizeof(binaryData));
+		string text = encodeToBase256U(binaryData, sizeof(binaryData));
 		cout << "[" << text << "]\t ";
 
 		// decode and check it:
 		uint8_t decodedData[sizeof(binaryData)] = {};
-		decodeBase256U(text, decodedData);
+		decodeFromBase256U(text, decodedData);
 		if (memcmp(binaryData, decodedData, sizeof(binaryData)) != 0)
 			return 1; // check failed
 	}
 	return 0;
 }
+
