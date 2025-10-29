@@ -65,19 +65,20 @@ void decodeFromBase256U(const string& string, uint8_t *dataPtr)
 
 void generateRandomData(uint8_t *dataPtr, size_t dataSize)
 {
-	unsigned int seed = (unsigned int)time(nullptr) + rand() + (unsigned int)(unsigned long)dataPtr + (unsigned int)dataSize + dataPtr[0];
-	srand(seed);
 	for (size_t i = 0; i < dataSize; i++)
-		dataPtr[i] = rand();
+		dataPtr[i] ^= rand();
 }
 
 int main(int argc, char *argv[])
 {
+	unsigned int randomSeed = rand() + (unsigned int)time(nullptr) + rand();
+	srand(randomSeed);
+
 	cout << endl;
-	cout << "Random 128-bits in base256U Encoding" << endl;
-	cout << "------------------------------------" << endl;
+	cout << "Random 128-bits Keys in base256U Encoding    (use double-click for copy&paste)" << endl;
+	cout << "-----------------------------------------" << endl;
 	
-	for (int i = 0; i < 100; i++)
+	for (int i = 0; i < 120; i++)
 	{
 		uint8_t binaryData[128 / 8];
 		generateRandomData(binaryData, sizeof(binaryData));
