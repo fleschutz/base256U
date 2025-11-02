@@ -71,12 +71,13 @@ void generateRandomData(uint8_t *dataPtr, size_t dataSize)
 
 int main(int argc, char *argv[])
 {
-	unsigned int randomSeed = rand() + (unsigned int)time(nullptr) + rand();
-	srand(randomSeed);
+	// shuffle a good random seed
+	unsigned int seed = rand() + (unsigned int)strlen(argv[0]) * (unsigned int)time(nullptr) ^ rand();
+	srand(seed);
 
 	cout << endl;
-	cout << "Random 128-bits Keys in base256U Encoding    (use double-click for copy&paste)" << endl;
-	cout << "-----------------------------------------" << endl;
+	cout << "Choose Your Safe Password" << endl;
+	cout << "-------------------------    (random 128 bits in base256U encoding, use double-click for copy&paste)" << endl;
 	
 	for (int i = 0; i < 120; i++)
 	{
