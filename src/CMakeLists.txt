@@ -1,6 +1,5 @@
-#
-# Platform-independent CMakefile to build base256U
-# ------------------------------------------------
+# Cross-platform CMake Build Instructions for base256U
+# ====================================================
 
 cmake_minimum_required(VERSION 3.10)
 

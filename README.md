@@ -1,19 +1,19 @@
 [![CMake on multiple platforms](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml)
 
-base256U: Base256 Encoding in Unicode
-=====================================
+Base256 Encoding in Unicode (base256U)
+======================================
 This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representing safe passwords, digital keys, file checksums, identifiers, hashes, extremely big numbers, or data in character-limited messengers.
 
 What is base256U?
 -----------------
 Each byte is represented by exactly one Unicode character (and vice versa). The mapping of byte to Unicode is dead simple:
 
-| Byte   | Unicode Character                  | Description           |
-|--------|------------------------------------|-----------------------|
-|    0-9 | '0'-'9'                            | 10 digits             |
-|  10-35 | 'A'-'Z'                            | 26 uppercase letters  |
-|  36-61 | 'a'-'z'                            | 26 lowercase letters  |
-| 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ...       | 194 accent letters    |
+| Byte   | Unicode Character                  | Comment                   |
+|--------|------------------------------------|---------------------------|
+|    0-9 | '0'-'9'                            | the 10 digits             |
+|  10-35 | 'A'-'Z'                            | the 26 uppercase letters  |
+|  36-61 | 'a'-'z'                            | the 26 lowercase letters  |
+| 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ...       | the 194 accent letters    |
 
 ✔️ Advantages
 --------------
@@ -26,7 +26,7 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 
 🔧 Installation
 ----------------
-Execute in a terminal window:  (requires a *C++ compiler* and *cmake* only) 
+Execute in a terminal window:  (*C++ compiler* and *cmake* required) 
 ```
 > git clone https://github.com/fleschutz/base256U  # or download & unzip the ZIP file (click the green button)
 > cd base256U/src
