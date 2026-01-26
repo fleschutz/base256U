@@ -29,7 +29,7 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 Execute in a terminal window:  (requires a *C++ compiler* and *cmake* only) 
 ```
 > git clone https://github.com/fleschutz/base256U  # or download & unzip the ZIP file (click the green button)
-> cd base256U
+> cd base256U/src
 > cmake .
 > make
 > ./base256U
