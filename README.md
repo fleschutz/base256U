@@ -26,7 +26,7 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 
 🔧 Installation
 ----------------
-Execute in a terminal window:  (requires a *C++ compiler* and *cmake* only) 
+Execute in a terminal window:  (*C++ compiler* and *cmake* required) 
 ```
 > git clone https://github.com/fleschutz/base256U  # or download & unzip the ZIP file (click the green button)
 > cd base256U
