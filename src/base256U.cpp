@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 	srand(seed);
 
 	cout << endl;
-	cout << "Choose Your Safe Password        (random 128 bits in base256U encoding, use double-click for copy&paste)" << endl;
+	cout << "Choose Your Safe Password       (random 128 bits in base256U encoding, use double-click to copy & paste)" << endl;
 	cout << "-------------------------" << endl;
 	
 	for (int i = 0; i < 120; i++)
