@@ -46,7 +46,7 @@ Execute in a terminal window:  (*C++ compiler* and *cmake* required)
 ⚖️ Comparison of Encoding Standards
 ------------------------------------
 
-| Base | Name                                                     | Alphabet                      | Example | Overhead in Bytes |
+| Base | Name                                                     | Alphabet                      | Example | Byte Overhead     |
 |------|----------------------------------------------------------|-------------------------------|---------|-------------------|
 |    2 | Binary                                                   | 0 or 1                        | 0101101 | 800%              |
 |    8 | Octal                                                    | 0-7                           | 7734124 |                   |
@@ -60,8 +60,8 @@ Execute in a terminal window:  (*C++ compiler* and *cmake* required)
 |  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | ~75%              |
 
 
-Strength of Password/Key
-------------------------
+Password/Key Size
+-----------------
 Required is a really random password or a random key (to rule out dictionary attacks). Then trying every possible key or
 password (called a 'brute force attack') at one billion attempts per second:
 
