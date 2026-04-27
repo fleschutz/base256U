@@ -37,39 +37,40 @@ Execute in a terminal window:  (*C++ compiler* and *cmake* required)
 
 🎉 Examples
 ------------
-* 64-bit keys: `ŖÔńĪ07ėñ`, `RŧáÃĆĶ2Õ`
-* 128-bit keys: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, `ņĨqvLŀŠsůØŸÙGCŰƀ`
-* 256-bit keys: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
+* 64-bit encoding: `ŖÔńĪ07ėñ`, or `RŧáÃĆĶ2Õ`
+* 128-bit encoding: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, or `ņĨqvLŀŠsůØŸÙGCŰƀ`
+* 256-bit encoding: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, or `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
 * [zeichensalat](https://karme.de/zeichensalat/): a tool to make compressed executables for copy & paste using less than 500 unicode characters. It is intended to be used on the fediverse (or in chats).
 
 
-⚖️ Other Encoding Standards
-----------------------------
+⚖️ Comparison of Encoding Standards
+------------------------------------
 
-| Base | Name                                                     | Alphabet                      | Example | Overhead |
-|------|----------------------------------------------------------|-------------------------------|---------|----------|
-|    2 | Binary                                                   | 0 or 1                        | 0101101 | +800%    |
-|    8 | Octal                                                    | 0-7                           | 7734124 |          |
-|   10 | Decimal                                                  | 0-9                           | 3849834 |          |
-|   16 | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) | 0-9,a-f (case insensitive)    | 7a9ff34 | +100%    |
-|   32 | [Base32](https://en.wikipedia.org/wiki/Base32)           | A-Z,2-7                       | S7FFQZB | +60%     |
-|   36 | [Base36](https://en.wikipedia.org/wiki/Base36)           | 0-9,A-Z                       | 7RT99XQ |          |
-|   45 | Base45                                                   | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |          |
-|   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | +33%/37% |
-|   85 | [Base85](https://en.wikipedia.org/wiki/Ascii85)          | !,",#,...,z                   | 9jqo    | +25%     |
-|  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | +~75%    |
+| Base | Name                                                     | Alphabet                      | Example | Byte Overhead |
+|------|----------------------------------------------------------|-------------------------------|---------|---------------|
+|    2 | Binary                                                   | 0 or 1                        | 0101101 | 800%          |
+|    8 | Octal                                                    | 0-7                           | 7734124 |               |
+|   10 | Decimal                                                  | 0-9                           | 3849834 |               |
+|   16 | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) | 0-9,a-f (case insensitive)    | 7a9ff34 | 100%          |
+|   32 | [Base32](https://en.wikipedia.org/wiki/Base32)           | A-Z,2-7                       | S7FFQZB | 60%           |
+|   36 | [Base36](https://en.wikipedia.org/wiki/Base36)           | 0-9,A-Z                       | 7RT99XQ |               |
+|   45 | Base45                                                   | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |               |
+|   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | 33%/37%       |
+|   85 | [Base85](https://en.wikipedia.org/wiki/Ascii85)          | !,",#,...,z                   | 9jqo    | 25%           |
+|  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | ~75%          |
 
 
-How long does it take to break a random key or password?
---------------------------------------------------------
-Trying every possible key or password (called a 'brute force attack') at one billion attempts per second:
+Strength of Password/Key
+------------------------
+Required is a really random password or a random key (to rule out dictionary attacks). Then trying every possible key or
+password (called a 'brute force attack') at one billion attempts per second:
 
-| Key Size | Key Example                        | Maximum Time Needed                     | 
-|----------|------------------------------------|-----------------------------------------|
-|  40-bit  | `ŞŰÀ8Œ`                            | ~9 minutes                              |
-|  56-bit  | `ŖÔńĪ7ėñ`                          | ~1 year                                 |
-| 128-bit  | `ĤŗwĹĦñŧīĳēaqöĜĖŅ`                 | ~5,783,128,169,837,158,197,871 years    |
-| 256-bit  | `ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔńiĪ7ėëŷò` | never, for all practical purposes       |
+| Key Size | Key Example                        | Max Time Needed @ 1B attempts/sec         | 
+|----------|------------------------------------|-------------------------------------------|
+|  40-bit  | `ŞŰÀ8Œ`                            | about 9 minutes                           |
+|  56-bit  | `ŖÔńĪ7ėñ`                          | about a year                              |
+| 128-bit  | `ĤŗwĹĦñŧīĳēaqöĜĖŅ`                 | about 5,783,128,169,837,158,197,871 years |
+| 256-bit  | `ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔńiĪ7ėëŷò` | never, for all practical purposes         |
 
 🤝 Contributing
 ----------------
