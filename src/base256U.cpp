@@ -63,6 +63,11 @@ void decodeFromBase256U(const string& string, uint8_t *dataPtr)
 	}
 }
 
+unsigned int getNearRandomSeed(int argc, char *argv[])
+{
+	return argc + rand() + (unsigned int)strlen(argv[0]) * (unsigned int)time(nullptr) ^ rand();
+}
+
 void generateRandomData(uint8_t *dataPtr, size_t dataSize)
 {
 	for (size_t i = 0; i < dataSize; i++)
@@ -71,9 +76,8 @@ void generateRandomData(uint8_t *dataPtr, size_t dataSize)
 
 int main(int argc, char *argv[])
 {
-	// shuffle a good random seed
-	unsigned int seed = rand() + (unsigned int)strlen(argv[0]) * (unsigned int)time(nullptr) ^ rand();
-	srand(seed);
+	// initialize with a near-random seed
+	srand(getNearRandomSeed(argc, argv));
 
 	cout << endl;
 	cout << "Choose Your Safe Password       (random 128 bits in base256U encoding, use double-click to copy & paste)" << endl;
