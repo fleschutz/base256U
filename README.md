@@ -46,18 +46,18 @@ Execute in a terminal window:  (*C++ compiler* and *cmake* required)
 ⚖️ Comparison of Encoding Standards
 ------------------------------------
 
-| Base | Name                                                     | Alphabet                      | Example | Byte Overhead |
-|------|----------------------------------------------------------|-------------------------------|---------|---------------|
-|    2 | Binary                                                   | 0 or 1                        | 0101101 | 800%          |
-|    8 | Octal                                                    | 0-7                           | 7734124 |               |
-|   10 | Decimal                                                  | 0-9                           | 3849834 |               |
-|   16 | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) | 0-9,a-f (case insensitive)    | 7a9ff34 | 100%          |
-|   32 | [Base32](https://en.wikipedia.org/wiki/Base32)           | A-Z,2-7                       | S7FFQZB | 60%           |
-|   36 | [Base36](https://en.wikipedia.org/wiki/Base36)           | 0-9,A-Z                       | 7RT99XQ |               |
-|   45 | Base45                                                   | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |               |
-|   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | 33%/37%       |
-|   85 | [Base85](https://en.wikipedia.org/wiki/Ascii85)          | !,",#,...,z                   | 9jqo    | 25%           |
-|  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | ~75%          |
+| Base | Name                                                     | Alphabet                      | Example | Overhead in Bytes |
+|------|----------------------------------------------------------|-------------------------------|---------|-------------------|
+|    2 | Binary                                                   | 0 or 1                        | 0101101 | 800%              |
+|    8 | Octal                                                    | 0-7                           | 7734124 |                   |
+|   10 | Decimal                                                  | 0-9                           | 3849834 |                   |
+|   16 | [Hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) | 0-9,a-f (case insensitive)    | 7a9ff34 | 100%              |
+|   32 | [Base32](https://en.wikipedia.org/wiki/Base32)           | A-Z,2-7                       | S7FFQZB | 60%               |
+|   36 | [Base36](https://en.wikipedia.org/wiki/Base36)           | 0-9,A-Z                       | 7RT99XQ |                   |
+|   45 | Base45                                                   | 0-9,A-Z,space,$,%,*,+,-,.,/,: | 8X%/9:A |                   |
+|   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | 33%/37%           |
+|   85 | [Base85](https://en.wikipedia.org/wiki/Ascii85)          | !,",#,...,z                   | 9jqo    | 25%               |
+|  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | ~75%              |
 
 
 Strength of Password/Key
