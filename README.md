@@ -1,7 +1,8 @@
-[![CMake on multiple platforms](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml)
-
 Base256 Encoding in Unicode (base256U)
 ======================================
+
+[![CMake on multiple platforms](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml)
+
 This repo contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representing safe passwords, digital keys, file checksums, identifiers, hashes, extremely big numbers, or data in character-limited messengers.
 
 What is base256U?
