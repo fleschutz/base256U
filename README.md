@@ -61,17 +61,17 @@ Execute in a terminal window:  (*C++ compiler* and *cmake* required)
 |  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | ~75%              |
 
 
-Password/Key Size
------------------
-Required is a really random password or a random key (to rule out dictionary attacks). Then trying every possible key or
-password (called a 'brute force attack') at one billion attempts per second:
+Safe Password/Key Sizes
+-----------------------
+Required is a really random password or key to rule out dictionary attacks. Attackers which try every possible key or
+password (called a 'brute force attack') at one billion attempts per second have to wait:
 
-| Key Size | Key Example                        | Max Time Needed @ 1B attempts/sec         | 
+| Key Size | Key Example                        | Max Wait Time @ 1B attempts/sec           | 
 |----------|------------------------------------|-------------------------------------------|
 |  40-bit  | `ŞŰÀ8Œ`                            | about 9 minutes                           |
 |  56-bit  | `ŖÔńĪ7ėñ`                          | about a year                              |
 | 128-bit  | `ĤŗwĹĦñŧīĳēaqöĜĖŅ`                 | about 5,783,128,169,837,158,197,871 years |
-| 256-bit  | `ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔńiĪ7ėëŷò` | never, for all practical purposes         |
+| 256-bit  | `ÿőMêŽĖiĘśŃäŞŰÀ8ŒŽĎäPfSŖÔńiĪ7ėëŷò` | forever                                   |
 
 🤝 Contributing
 ----------------
