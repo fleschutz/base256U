@@ -25,25 +25,11 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 * **Supports all Unicode versions:** highest code point is 387 which requires Unicode 1.0 only.
 * **Easy to implement:** see [base256U.cpp](src/base256U.cpp).
 
-🔧 Installation
-----------------
-Execute in a terminal window:  (*C++ compiler* and *cmake* required) 
-```
-> git clone https://github.com/fleschutz/base256U  # or download & unzip the ZIP file (click the green button)
-> cd base256U/src
-> cmake .
-> make
-> ./base256U
-```
-The program writes a list of safe passwords (random 128 bits) in base256U encoding. Please use double-clicking and copy & paste.
-
 🎉 Examples
 ------------
 * 64-bit encoding: `ŖÔńĪ07ėñ`, or `RŧáÃĆĶ2Õ`
 * 128-bit encoding: `ĺËĀ8Ę3ĩŔá0VzœĹŀî`, `ŽTĭŊõł3ÐÑęGųĢÛąĶ`, `5iŗ3īÛźUKĺŰÑÞbŒŜ`, or `ņĨqvLŀŠsůØŸÙGCŰƀ`
 * 256-bit encoding: `ħŅŹĬšÝŋţĀĸĻňőċqâĮŹúŪßWPŞÓā8æťÁüċ`, or `Ě2ħŤRŧáÃĆĶ2ÕŀSŜöĄPŞÜbŰ06lŔùö9ĬŒģ`
-* [zeichensalat](https://karme.de/zeichensalat/): a tool to make compressed executables for copy & paste using less than 500 unicode characters. It is intended to be used on the fediverse (or in chats).
-
 
 ⚖️ Comparison of Encoding Standards
 ------------------------------------
@@ -60,6 +46,24 @@ The program writes a list of safe passwords (random 128 bits) in base256U encodi
 |   64 | [Base64](https://en.wikipedia.org/wiki/Base64)           | A-Z,a-z,0-9,+,-               | zA8r+8q | 33%/37%           |
 |   85 | [Base85](https://en.wikipedia.org/wiki/Ascii85)          | !,",#,...,z                   | 9jqo    | 25%               |
 |  256 | Base256U                                                 | 0-9,A-Z,a-z,accent letters    | ĘśŃäŞŰÀ | ~75%              |
+
+
+🔧 Installation
+----------------
+Execute in a terminal window:  (*C++ compiler* and *cmake* required) 
+```
+> git clone https://github.com/fleschutz/base256U  # or download & unzip the ZIP file (click the green button)
+> cd base256U/src
+> cmake .
+> make
+> ./base256U
+```
+The program writes a list of safe passwords (random 128 bits) in base256U encoding. Please use double-clicking and copy & paste.
+
+🎉 Other Use-Cases
+-------------------
+* [zeichensalat](https://karme.de/zeichensalat/): a tool to make compressed executables for copy & paste using less than 500 unicode characters. It is intended to be used on the fediverse (or in chats).
+
 
 
 Safe Password/Key Sizes
