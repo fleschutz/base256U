@@ -35,6 +35,7 @@ Execute in a terminal window:  (*C++ compiler* and *cmake* required)
 > make
 > ./base256U
 ```
+The program writes a list of safe passwords (random 128 bits) in base256U encoding. Please use double-clicking and copy & paste.
 
 🎉 Examples
 ------------
