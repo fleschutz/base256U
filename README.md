@@ -1,7 +1,7 @@
 Base256 Encoding in Unicode (base256U)
 ======================================
 
-This repository contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representation of: safe passwords, digital keys, checksums, identifiers, hashes, extremely big numbers, or data in character-limited messengers.
+This repository contains a C++ sample implementation to represent binary data in base256 encoding by using Unicode characters. Typical use cases are representation of safe passwords, digital keys, checksums, identifiers, hashes, extremely big numbers, or data in character-limited messengers.
 
 [![CMake on multiple platforms](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml/badge.svg)](https://github.com/fleschutz/base256U/actions/workflows/cmake-multi-platform.yml)
 
@@ -16,8 +16,8 @@ Each byte is represented by exactly one Unicode character (and vice versa). The 
 |  36-61 | 'a'-'z'                            | the 26 lowercase letters  |
 | 62-255 | 'À', 'Á', 'Â', 'Ã', 'Ä', ...       | the 194 accent letters    |
 
-✔️ Advantages
---------------
+✔️ Features
+------------
 * **Ultra compact**, e.g. 16 characters like `5iŗ3īÛźUKĺŰÑÞbŒŜ` can encode 128-bit of data!
 * **Easy to recognize** due to the accent letters.
 * **Safe to use:** can't be remembered, so people are forced to copy & paste it (no need to hide it).
